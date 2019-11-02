@@ -1,6 +1,7 @@
 export * from './event';
 export * from './event-default';
 export * from './user';
+export * from './company';
 export * from './contact';
 export * from './contact-default';
 export * from './website';
