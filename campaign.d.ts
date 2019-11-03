@@ -1,3 +1,5 @@
+import { ContactProperties } from './contact';
+
 export enum CampaignTypeEnum {
     manual = 0,
     auto = 1,
@@ -28,5 +30,5 @@ export interface Campaign {
     subject?: string;
     content: string;
     sender: string;
-    // recipients: ContactProperties | string[];
+    recipients: ContactProperties | string[];
 }

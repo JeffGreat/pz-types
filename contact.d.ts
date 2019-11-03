@@ -1,3 +1,9 @@
+export interface Contact extends ContactProperties {
+  id: string;
+  event: string;
+  company: string;
+}
+
 export enum FieldTypeEnum {
     Text = 0,
     YesNo = 1,
