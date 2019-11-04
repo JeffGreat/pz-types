@@ -14,9 +14,10 @@ export enum CampaignMediaEnum {
 
 export enum CampaignStatusEnum {
     created = 0,
-    pending = 3,
-    sending = 4,
-    sent = 5,
+    scheduled = 2,
+    pending = 10,
+    sending = 20,
+    sent = 50,
 }
 
 export interface Campaign {
@@ -31,5 +32,6 @@ export interface Campaign {
     content: string;
     sender: string;
     recipients: ContactProperties | string[];
+    routerSettings: any;
     routerResponse: any;
 }

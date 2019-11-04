@@ -3,6 +3,7 @@ export interface Company {
     name: string;
     logo: number;
     routingSettings: any;
+    routingSmsSettings: any;
     creditsSms: number;
     creditsEmail: number;
 }
