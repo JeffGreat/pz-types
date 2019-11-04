@@ -31,4 +31,5 @@ export interface Campaign {
     content: string;
     sender: string;
     recipients: ContactProperties | string[];
+    routerResponse: any;
 }
