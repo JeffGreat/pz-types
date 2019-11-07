@@ -22,6 +22,11 @@ export declare enum quotaTypes {
     QuotaSubscription = "subscription_quota",
     QuotaCheckin = "checkin_quota"
 }
+export declare enum textFormatEnum {
+    Uppercase = 0,
+    Lowercase = 1,
+    Capitalize = 2
+}
 export interface FieldTypeGroupOptionsGroup {
     value: number;
     name: string;
@@ -53,6 +58,9 @@ export interface FieldTypeDateOptions extends BaseFieldTypeOptions {
     min: Date;
     max: Date;
 }
+export interface FieldTypeTextOptions extends BaseFieldTypeOptions {
+    format: textFormatEnum;
+}
 export declare const NoIndex = 0;
 export declare const YesIndex = 1;
 export interface FieldTypeYesNoOptions extends BaseFieldTypeOptions {
@@ -74,7 +82,7 @@ export declare enum FieldDisplayModeInterfaceEnum {
     CheckinNewContact = "checkinNewContact",
     FormFields = "formFields"
 }
-export declare type FieldTypeOptions = FieldTypeGroupOptions | FieldTypeDateOptions | FieldTypeLinkOptions | FieldTypeNumberOptions | FieldTypeRangeOptions | FieldTypeYesNoOptions | FieldTypeImageOptions;
+export declare type FieldTypeOptions = FieldTypeGroupOptions | FieldTypeDateOptions | FieldTypeLinkOptions | FieldTypeNumberOptions | FieldTypeRangeOptions | FieldTypeYesNoOptions | FieldTypeTextOptions | FieldTypeImageOptions;
 export declare type ContactProperties = {
     [K in ContactFieldsNameEnum]: any;
 };

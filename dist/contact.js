@@ -18,6 +18,12 @@ var quotaTypes;
     quotaTypes["QuotaSubscription"] = "subscription_quota";
     quotaTypes["QuotaCheckin"] = "checkin_quota";
 })(quotaTypes = exports.quotaTypes || (exports.quotaTypes = {}));
+var textFormatEnum;
+(function (textFormatEnum) {
+    textFormatEnum[textFormatEnum["Uppercase"] = 0] = "Uppercase";
+    textFormatEnum[textFormatEnum["Lowercase"] = 1] = "Lowercase";
+    textFormatEnum[textFormatEnum["Capitalize"] = 2] = "Capitalize";
+})(textFormatEnum = exports.textFormatEnum || (exports.textFormatEnum = {}));
 exports.NoIndex = 0;
 exports.YesIndex = 1;
 var FieldDisplayModeEnum;
