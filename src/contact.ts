@@ -26,6 +26,12 @@ export enum quotaTypes {
     QuotaCheckin = 'checkin_quota',
 }
 
+export enum textFormatEnum {
+    Uppercase = 0,
+    Lowercase = 1,
+    Capitalize = 2,
+}
+
 export interface FieldTypeGroupOptionsGroup {
     value: number;
     name: string;
@@ -61,6 +67,10 @@ export interface FieldTypeDateOptions extends BaseFieldTypeOptions {
     max: Date;
 }
 
+export interface FieldTypeTextOptions extends BaseFieldTypeOptions {
+    format: textFormatEnum;
+}
+
 export const NoIndex = 0;
 export const YesIndex = 1;
 export interface FieldTypeYesNoOptions extends BaseFieldTypeOptions {
@@ -92,6 +102,7 @@ export type FieldTypeOptions =
     | FieldTypeNumberOptions
     | FieldTypeRangeOptions
     | FieldTypeYesNoOptions
+    | FieldTypeTextOptions
     | FieldTypeImageOptions;
 
 export type ContactProperties = { [K in ContactFieldsNameEnum]: any }; // object clé-valeur
