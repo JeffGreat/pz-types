@@ -21,12 +21,12 @@ export interface BaseFieldTypeOptions {
     defaultValue?: any;
 }
 
-export enum quotaTypes {
+export enum QuotaTypes {
     QuotaSubscription = 'subscription_quota',
     QuotaCheckin = 'checkin_quota',
 }
 
-export enum textFormatEnum {
+export enum TextFormatEnum {
     Uppercase = 0,
     Lowercase = 1,
     Capitalize = 2,
@@ -36,7 +36,7 @@ export interface FieldTypeGroupOptionsGroup {
     value: number;
     name: string;
     counter?: number;
-    quotas?: { [K in quotaTypes]: number };
+    quotas?: { [K in QuotaTypes]: number };
     position?: number;
 }
 
@@ -68,7 +68,7 @@ export interface FieldTypeDateOptions extends BaseFieldTypeOptions {
 }
 
 export interface FieldTypeTextOptions extends BaseFieldTypeOptions {
-    format: textFormatEnum;
+    format: TextFormatEnum;
 }
 
 export const NoIndex = 0;

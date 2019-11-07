@@ -13,17 +13,17 @@ var FieldTypeEnum;
     FieldTypeEnum[FieldTypeEnum["Number"] = 8] = "Number";
     FieldTypeEnum[FieldTypeEnum["Signature"] = 9] = "Signature";
 })(FieldTypeEnum = exports.FieldTypeEnum || (exports.FieldTypeEnum = {}));
-var quotaTypes;
-(function (quotaTypes) {
-    quotaTypes["QuotaSubscription"] = "subscription_quota";
-    quotaTypes["QuotaCheckin"] = "checkin_quota";
-})(quotaTypes = exports.quotaTypes || (exports.quotaTypes = {}));
-var textFormatEnum;
-(function (textFormatEnum) {
-    textFormatEnum[textFormatEnum["Uppercase"] = 0] = "Uppercase";
-    textFormatEnum[textFormatEnum["Lowercase"] = 1] = "Lowercase";
-    textFormatEnum[textFormatEnum["Capitalize"] = 2] = "Capitalize";
-})(textFormatEnum = exports.textFormatEnum || (exports.textFormatEnum = {}));
+var QuotaTypes;
+(function (QuotaTypes) {
+    QuotaTypes["QuotaSubscription"] = "subscription_quota";
+    QuotaTypes["QuotaCheckin"] = "checkin_quota";
+})(QuotaTypes = exports.QuotaTypes || (exports.QuotaTypes = {}));
+var TextFormatEnum;
+(function (TextFormatEnum) {
+    TextFormatEnum[TextFormatEnum["Uppercase"] = 0] = "Uppercase";
+    TextFormatEnum[TextFormatEnum["Lowercase"] = 1] = "Lowercase";
+    TextFormatEnum[TextFormatEnum["Capitalize"] = 2] = "Capitalize";
+})(TextFormatEnum = exports.TextFormatEnum || (exports.TextFormatEnum = {}));
 exports.NoIndex = 0;
 exports.YesIndex = 1;
 var FieldDisplayModeEnum;
