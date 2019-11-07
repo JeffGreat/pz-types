@@ -1,7 +1,6 @@
 import { ContactFieldsNameEnum, ContactFields } from './contact';
 import { Website } from './website';
 import { TypeNumber, ErrorCorrectionLevel } from './qrcode';
-
 export interface Event {
     id: string;
     name: string;
@@ -19,10 +18,12 @@ export interface Event {
     website: Website;
     company: string;
 }
-
 export interface EventSession {
     name: string;
-    fieldsGroup: { id: string; value: number }[];
+    fieldsGroup: {
+        id: string;
+        value: number;
+    }[];
 }
 export interface EventTheme {
     primary: string;
@@ -31,27 +32,26 @@ export interface EventTheme {
     dark: string;
     background: string;
 }
-
-export enum AccessTypeEnum {
-    participant = 'Participant',
-    conferencier = 'Conférencier',
-    moderateur = 'Modérateur',
-    emargeur = 'Emargeur',
-    commercial = 'Commercial',
+export declare enum AccessTypeEnum {
+    participant = "Participant",
+    conferencier = "Conf\u00E9rencier",
+    moderateur = "Mod\u00E9rateur",
+    emargeur = "Emargeur",
+    commercial = "Commercial"
 }
-export type SettingsAccess = {
-    [K in AccessTypeEnum]: { enabled: boolean; password: string };
+export declare type SettingsAccess = {
+    [K in AccessTypeEnum]: {
+        enabled: boolean;
+        password: string;
+    };
 };
-
-export type SettingsBadge = {
-    contactAssociation: ContactFieldsNameEnum;
+export declare type SettingsBadge = {
+    contactAssociation?: ContactFieldsNameEnum;
     qrcodeFormat: QrcodeFormat;
 };
-
-export type QrcodeFormat = {
+export declare type QrcodeFormat = {
     field: string;
     typeNumber: TypeNumber;
     errorCorrectionLevel: ErrorCorrectionLevel;
 };
-
-export type EventSettings = {};
+export declare type EventSettings = {};

@@ -2,11 +2,12 @@
   "name": "pz-types",
   "version": "1.0.0",
   "description": "",
-  "main": "index.d.ts",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+    "build": "tsc",
+    "link": "npm run build && cd dist && npm link"
   },
   "author": "",
   "license": "ISC",

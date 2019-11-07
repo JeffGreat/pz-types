@@ -1,4 +1,4 @@
-interface User {
+export interface User {
     id: string;
     email: string | null;
     picture: string;
@@ -7,7 +7,6 @@ interface User {
     services: any;
     role: string;
 }
-
 export interface Auth {
     token: string;
     user: User;
