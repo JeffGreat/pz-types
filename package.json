@@ -2,7 +2,7 @@
   "name": "pz-types",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.d.ts",
   "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +14,7 @@
     "typescript": "^3.6.4"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.5.29",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
     "eslint": "^6.6.0",

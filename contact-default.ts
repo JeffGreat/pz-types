@@ -1,4 +1,4 @@
-import { FieldTypeEnum, FieldDisplayModeEnum, ContactFields } from './contact';
+import { FieldTypeEnum, FieldDisplayModeEnum, ContactFields, quotaTypes } from './contact';
 
 export const defaultContactFields: ContactFields = {
     picture: {
@@ -108,25 +108,25 @@ export const defaultContactFields: ContactFields = {
                     value: -1,
                     position: 0,
                     name: 'Ne vient pas',
-                    quotas: { checkinQuota: 0, subscriptionQuota: 0 },
+                    quotas: { [quotaTypes.QuotaCheckin]: 0, [quotaTypes.QuotaSubscription]: 0 },
                 },
                 {
                     value: 0,
                     position: 1,
                     name: 'Sans réponse',
-                    quotas: { checkinQuota: 0, subscriptionQuota: 0 },
+                    quotas: { [quotaTypes.QuotaCheckin]: 0, [quotaTypes.QuotaSubscription]: 0 },
                 },
                 {
                     value: 1,
                     position: 2,
                     name: 'Peut-être',
-                    quotas: { checkinQuota: 0, subscriptionQuota: 0 },
+                    quotas: { [quotaTypes.QuotaCheckin]: 0, [quotaTypes.QuotaSubscription]: 0 },
                 },
                 {
                     value: 2,
                     position: 3,
                     name: 'Oui',
-                    quotas: { checkinQuota: 0, subscriptionQuota: 0 },
+                    quotas: { [quotaTypes.QuotaCheckin]: 0, [quotaTypes.QuotaSubscription]: 0 },
                 },
             ],
             multiple: false,

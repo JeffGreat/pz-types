@@ -18,7 +18,7 @@ export enum FieldTypeEnum {
 }
 
 export interface BaseFieldTypeOptions {
-    default_value?: any;
+    defaultValue?: any;
 }
 
 export enum quotaTypes {
