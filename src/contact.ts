@@ -27,9 +27,10 @@ export enum QuotaTypes {
 }
 
 export enum TextFormatEnum {
-    Uppercase = 0,
-    Lowercase = 1,
-    Capitalize = 2,
+    NoFormat = 0,
+    Uppercase = 1,
+    Lowercase = 2,
+    Capitalize = 3,
 }
 
 export interface FieldTypeGroupOptionsGroup {
