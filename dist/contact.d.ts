@@ -1,7 +1,20 @@
 export interface Contact extends ContactProperties {
     id: string;
+    source: ContactSourceType;
     event: string;
     company: string;
+}
+export interface ContactSource {
+    sourceType: ContactSourceType;
+    date: Date;
+    Author: String;
+}
+export declare enum ContactSourceType {
+    Single = 0,
+    Import = 1,
+    Checkin = 2,
+    Website = 3,
+    EmbedForm = 4
 }
 export declare enum FieldTypeEnum {
     Text = 0,
@@ -23,9 +36,10 @@ export declare enum QuotaTypes {
     QuotaCheckin = "checkin_quota"
 }
 export declare enum TextFormatEnum {
-    Uppercase = 0,
-    Lowercase = 1,
-    Capitalize = 2
+    NoFormat = 0,
+    Uppercase = 1,
+    Lowercase = 2,
+    Capitalize = 3
 }
 export interface FieldTypeGroupOptionsGroup {
     value: number;

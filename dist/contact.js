@@ -1,5 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var ContactSourceType;
+(function (ContactSourceType) {
+    ContactSourceType[ContactSourceType["Single"] = 0] = "Single";
+    ContactSourceType[ContactSourceType["Import"] = 1] = "Import";
+    ContactSourceType[ContactSourceType["Checkin"] = 2] = "Checkin";
+    ContactSourceType[ContactSourceType["Website"] = 3] = "Website";
+    ContactSourceType[ContactSourceType["EmbedForm"] = 4] = "EmbedForm";
+})(ContactSourceType = exports.ContactSourceType || (exports.ContactSourceType = {}));
 var FieldTypeEnum;
 (function (FieldTypeEnum) {
     FieldTypeEnum[FieldTypeEnum["Text"] = 0] = "Text";
@@ -20,9 +28,10 @@ var QuotaTypes;
 })(QuotaTypes = exports.QuotaTypes || (exports.QuotaTypes = {}));
 var TextFormatEnum;
 (function (TextFormatEnum) {
-    TextFormatEnum[TextFormatEnum["Uppercase"] = 0] = "Uppercase";
-    TextFormatEnum[TextFormatEnum["Lowercase"] = 1] = "Lowercase";
-    TextFormatEnum[TextFormatEnum["Capitalize"] = 2] = "Capitalize";
+    TextFormatEnum[TextFormatEnum["NoFormat"] = 0] = "NoFormat";
+    TextFormatEnum[TextFormatEnum["Uppercase"] = 1] = "Uppercase";
+    TextFormatEnum[TextFormatEnum["Lowercase"] = 2] = "Lowercase";
+    TextFormatEnum[TextFormatEnum["Capitalize"] = 3] = "Capitalize";
 })(TextFormatEnum = exports.TextFormatEnum || (exports.TextFormatEnum = {}));
 exports.NoIndex = 0;
 exports.YesIndex = 1;
