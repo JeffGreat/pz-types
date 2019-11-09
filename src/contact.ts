@@ -6,9 +6,9 @@ export interface Contact extends ContactProperties {
 }
 
 export interface ContactSource {
-    sourceType: ContactSourceType;
+    source: ContactSourceType;
     date: Date;
-    Author: String;
+    author: String;
 }
 
 export enum ContactSourceType {
