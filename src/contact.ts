@@ -1,7 +1,22 @@
 export interface Contact extends ContactProperties {
     id: string;
+    source: ContactSourceType;
     event: string;
     company: string;
+}
+
+export interface ContactSource {
+    sourceType: ContactSourceType;
+    date: Date;
+    Author: String;
+}
+
+export enum ContactSourceType {
+    Single = 0,
+    Import = 1,
+    Checkin = 2,
+    Website = 3,
+    EmbedForm = 4,
 }
 
 export enum FieldTypeEnum {
