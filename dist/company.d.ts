@@ -1,5 +1,5 @@
 export interface SmsRouter {
-    sender: string;
+    sender?: string;
     provider?: {
         endpoint: string;
         key: string;
@@ -8,7 +8,7 @@ export interface SmsRouter {
     };
 }
 export interface EmailRouter {
-    sender: string;
+    sender?: string;
     provider?: {
         endpoint: string;
         key: string;

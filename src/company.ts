@@ -1,10 +1,10 @@
 export interface SmsRouter {
-    sender: string;
+    sender?: string;
     provider?: {endpoint: string; key: string; secret: string; consummerKey: string};
 }
 
 export interface EmailRouter {
-    sender: string;
+    sender?: string;
     provider?: {endpoint: string; key: string; secret: string; consummerKey: string};
 }
 
