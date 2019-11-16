@@ -2,8 +2,10 @@ export interface Company {
     id: string;
     name: string;
     logo: number;
-    routingSettings: any;
-    routingSmsSettings: any;
+    routingSettings: {
+        sms: Object;
+        email: Object;
+    };
     creditsSms: number;
     creditsEmail: number;
 }
