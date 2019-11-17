@@ -1,4 +1,4 @@
-import { ContactProperties } from './contact';
+import { ContactProperties, Contact } from './contact';
 export declare enum CampaignTypeEnum {
     manual = 0,
     auto = 1,
@@ -16,11 +16,22 @@ export declare enum CampaignStatusEnum {
     sending = 20,
     sent = 50
 }
+export declare enum CampaignTriggerEnum {
+    subscription = 10,
+    status = 20,
+    checkin = 30
+}
+export interface CampaignTrigger {
+    trigger: CampaignTriggerEnum;
+    source?: Contact[];
+}
+export declare type CampaignTriggerType = Date | CampaignTrigger;
 export interface Campaign {
     id: string;
     event: string;
     type: CampaignTypeEnum;
     media: CampaignMediaEnum;
+    trigger: CampaignTrigger;
     sendDate: Date;
     status: CampaignStatusEnum;
     name: string;
