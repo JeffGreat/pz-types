@@ -1,4 +1,4 @@
-import { ContactProperties, Contact } from './contact';
+import { ContactProperties } from './contact';
 export declare enum CampaignTypeEnum {
     manual = 0,
     auto = 1,
@@ -23,7 +23,7 @@ export declare enum CampaignTriggerEnum {
 }
 export interface CampaignTrigger {
     trigger: CampaignTriggerEnum;
-    source?: Contact[];
+    source?: ContactProperties;
 }
 export declare type CampaignTriggerType = Date | CampaignTrigger;
 export interface Campaign {

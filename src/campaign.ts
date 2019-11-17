@@ -28,7 +28,7 @@ export enum CampaignTriggerEnum {
 
 export interface CampaignTrigger {
     trigger: CampaignTriggerEnum;
-    source?: Contact[];
+    source?: ContactProperties;
 }
 
 export type CampaignTriggerType = Date | CampaignTrigger;
