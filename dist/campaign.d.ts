@@ -31,7 +31,7 @@ export interface Campaign {
     event: string;
     type: CampaignTypeEnum;
     media: CampaignMediaEnum;
-    trigger: CampaignTrigger;
+    trigger: CampaignTriggerType;
     sendDate: Date;
     status: CampaignStatusEnum;
     name: string;
