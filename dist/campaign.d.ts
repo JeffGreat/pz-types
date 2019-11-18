@@ -32,13 +32,13 @@ export interface Campaign {
     type: CampaignTypeEnum;
     media: CampaignMediaEnum;
     trigger: CampaignTriggerType;
-    sendDate: Date;
+    sendDate?: Date;
     status: CampaignStatusEnum;
     name: string;
     subject?: string;
-    content: string;
+    content?: string;
     sender: string;
-    recipients: ContactProperties | string[];
-    routerSettings: any;
-    routerResponse: any;
+    recipients?: ContactProperties | string[];
+    routerSettings?: any;
+    routerResponse?: any;
 }
