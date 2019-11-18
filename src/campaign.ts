@@ -20,25 +20,23 @@ export enum CampaignStatusEnum {
     sent = 50,
 }
 
-export enum CampaignTriggerEnum {
+export enum CampaignTriggerActionEnum {
     subscription = 10,
     status = 20,
     checkin = 30,
 }
 
 export interface CampaignTrigger {
-    trigger: CampaignTriggerEnum;
+    action: CampaignTriggerActionEnum;
     source?: ContactProperties;
 }
-
-export type CampaignTriggerType = Date | CampaignTrigger;
 
 export interface Campaign {
     id: string;
     event: string;
     type: CampaignTypeEnum;
     media: CampaignMediaEnum;
-    trigger: CampaignTriggerType;
+    trigger?: CampaignTrigger;
     sendDate?: Date;
     status: CampaignStatusEnum;
     name: string;

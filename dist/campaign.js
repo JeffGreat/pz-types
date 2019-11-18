@@ -20,9 +20,9 @@ var CampaignStatusEnum;
     CampaignStatusEnum[CampaignStatusEnum["sending"] = 20] = "sending";
     CampaignStatusEnum[CampaignStatusEnum["sent"] = 50] = "sent";
 })(CampaignStatusEnum = exports.CampaignStatusEnum || (exports.CampaignStatusEnum = {}));
-var CampaignTriggerEnum;
-(function (CampaignTriggerEnum) {
-    CampaignTriggerEnum[CampaignTriggerEnum["subscription"] = 10] = "subscription";
-    CampaignTriggerEnum[CampaignTriggerEnum["status"] = 20] = "status";
-    CampaignTriggerEnum[CampaignTriggerEnum["checkin"] = 30] = "checkin";
-})(CampaignTriggerEnum = exports.CampaignTriggerEnum || (exports.CampaignTriggerEnum = {}));
+var CampaignTriggerActionEnum;
+(function (CampaignTriggerActionEnum) {
+    CampaignTriggerActionEnum[CampaignTriggerActionEnum["subscription"] = 10] = "subscription";
+    CampaignTriggerActionEnum[CampaignTriggerActionEnum["status"] = 20] = "status";
+    CampaignTriggerActionEnum[CampaignTriggerActionEnum["checkin"] = 30] = "checkin";
+})(CampaignTriggerActionEnum = exports.CampaignTriggerActionEnum || (exports.CampaignTriggerActionEnum = {}));
