@@ -16,14 +16,15 @@ export interface EmailRouter {
         consummerKey: string;
     };
 }
+export interface RoutingSettings {
+    sms: SmsRouter;
+    email: EmailRouter;
+}
 export interface Company {
     id: string;
     name: string;
     logo: number;
-    routingSettings: {
-        sms: SmsRouter;
-        email: EmailRouter;
-    };
+    routingSettings: RoutingSettings;
     creditsSms: number;
     creditsEmail: number;
 }
