@@ -1,5 +1,11 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var CampaignRecipientsTypeEnum;
+(function (CampaignRecipientsTypeEnum) {
+    CampaignRecipientsTypeEnum[CampaignRecipientsTypeEnum["all"] = 0] = "all";
+    CampaignRecipientsTypeEnum[CampaignRecipientsTypeEnum["groups"] = 1] = "groups";
+    CampaignRecipientsTypeEnum[CampaignRecipientsTypeEnum["custom"] = 2] = "custom";
+})(CampaignRecipientsTypeEnum = exports.CampaignRecipientsTypeEnum || (exports.CampaignRecipientsTypeEnum = {}));
 var CampaignTypeEnum;
 (function (CampaignTypeEnum) {
     CampaignTypeEnum[CampaignTypeEnum["manual"] = 0] = "manual";

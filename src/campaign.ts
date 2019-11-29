@@ -1,6 +1,6 @@
 import { ContactProperties, Contact } from './contact';
 
-export declare enum CampaignRecipientsTypeEnum {
+export enum CampaignRecipientsTypeEnum {
     all = 0,
     groups = 1,
     custom = 2,
