@@ -14,7 +14,7 @@ export enum SubscriptionOpenEnum {
 }
 
 export interface Website {
-    site: { status: WebsiteStatusEnum; content: string };
+    site: { status: WebsiteStatusEnum; content: string; trackingCode: string };
     subscription: {
         status: SubscriptionStatusEnum;
         open: SubscriptionOpenEnum;
