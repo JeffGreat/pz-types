@@ -5,6 +5,7 @@ export * from './company';
 export * from './contact';
 export * from './contact-default';
 export * from './website';
+export * from './subscription-form';
 export * from './campaign';
 export * from './badge';
 export * from './badge-default';

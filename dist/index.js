@@ -8,5 +8,6 @@ __export(require("./event-default"));
 __export(require("./contact"));
 __export(require("./contact-default"));
 __export(require("./website"));
+__export(require("./subscription-form"));
 __export(require("./campaign"));
 __export(require("./badge-default"));
