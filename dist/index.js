@@ -9,5 +9,6 @@ __export(require("./contact"));
 __export(require("./contact-default"));
 __export(require("./website"));
 __export(require("./subscription-form"));
+__export(require("./subscription-form-default"));
 __export(require("./campaign"));
 __export(require("./badge-default"));
