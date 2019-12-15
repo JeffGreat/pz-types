@@ -1,7 +1,7 @@
 import { ContactFieldsNameEnum, ContactFields } from './contact';
 import { Website } from './website';
 import { TypeNumber, ErrorCorrectionLevel } from './qrcode';
-import { subscriptionForm } from './subscription-form';
+import { SubscriptionForm } from './subscription-form';
 export interface Event {
     id: string;
     name: string;
@@ -17,7 +17,7 @@ export interface Event {
     settingsBadge: SettingsBadge;
     settings: EventSettings;
     website: Website;
-    subscirptionForm: subscriptionForm;
+    subscriptionForm: SubscriptionForm;
     company: string;
 }
 export interface EventSession {
