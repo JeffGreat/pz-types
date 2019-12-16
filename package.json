@@ -9,6 +9,7 @@
     "build": "tsc",
     "link": "npm run build && cd dist && npm link"
   },
+  "pre-commit": "build",
   "author": "",
   "license": "ISC",
   "dependencies": {
