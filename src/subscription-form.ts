@@ -25,7 +25,7 @@ export interface FormContent {
     twoColumns: boolean;
     showLabel: boolean;
     inlineFields: boolean;
-    content: FormContentField[][];
+    formFields: FormContentField[][];
 }
 
 export interface SubscriptionForm {
