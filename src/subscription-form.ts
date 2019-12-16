@@ -17,8 +17,7 @@ export enum FormContentBlocTypeEnum {
 
 export interface FormContentField {
     type: FormContentBlocTypeEnum;
-    fieldId?: string;
-    options: { value: string; textAlign: string };
+    options: { value: string; textAlign: string; fieldId: string };
 }
 
 export interface FormContent {
