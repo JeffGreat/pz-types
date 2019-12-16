@@ -6,4 +6,5 @@ export interface Website {
     status: WebsiteStatusEnum;
     content: string;
     trackingCode: string;
+    favico: string;
 }
