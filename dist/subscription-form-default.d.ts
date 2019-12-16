@@ -2,5 +2,11 @@ export declare const defaultSubscriptionForm: {
     status: number;
     open: boolean;
     quota: number;
-    content: any;
+    content: {
+        width: number;
+        twoColumns: boolean;
+        showLabel: boolean;
+        inlineFields: boolean;
+        formFields: any[];
+    };
 };
