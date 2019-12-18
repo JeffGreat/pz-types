@@ -1,5 +1,56 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.defaultFormFields = [
+    {
+        type: 1,
+        options: {
+            value: '<h1>Inscription</h1>',
+        },
+    },
+    {
+        type: 0,
+        options: {
+            fieldId: 'firstName',
+            label: null,
+        },
+    },
+    {
+        type: 0,
+        options: {
+            fieldId: 'lastName',
+            label: null,
+        },
+    },
+    {
+        type: 0,
+        options: {
+            fieldId: 'email',
+            label: null,
+        },
+    },
+    {
+        type: 0,
+        options: {
+            fieldId: 'status',
+            label: null,
+        },
+    },
+    {
+        type: 2,
+    },
+    {
+        type: 3,
+        options: {
+            value: 'Enregistrer ma venue',
+        },
+    },
+    {
+        type: 1,
+        options: {
+            value: "En m'inscrivant j'accepte les conditions générales d'utilisation.",
+        },
+    },
+];
 exports.defaultSubscriptionForm = {
     status: 0,
     open: true,
@@ -9,6 +60,6 @@ exports.defaultSubscriptionForm = {
         twoColumns: false,
         showLabel: true,
         inlineFields: false,
-        formFields: [],
+        formFields: exports.defaultFormFields,
     },
 };

@@ -16,6 +16,8 @@ export interface FormContentField {
     type: FormContentBlocTypeEnum;
     options: {
         value: string;
+        label: string;
+        required: boolean;
         textAlign: string;
         fieldId: string;
     };
