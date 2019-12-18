@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var subscription_form_1 = require("./subscription-form");
 exports.defaultFormFields = [
     {
         type: 1,
@@ -53,7 +54,7 @@ exports.defaultFormFields = [
 ];
 exports.defaultSubscriptionForm = {
     status: 0,
-    open: true,
+    open: subscription_form_1.SubscriptionOpenEnum.OpenToAll,
     quota: -1,
     content: {
         width: 100,

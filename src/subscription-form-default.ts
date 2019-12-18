@@ -1,4 +1,6 @@
-export const defaultFormFields = [
+import { SubscriptionForm, SubscriptionOpenEnum, FormContentField } from './subscription-form';
+
+export const defaultFormFields: FormContentField[] = [
     {
         type: 1,
         options: {
@@ -50,9 +52,9 @@ export const defaultFormFields = [
     },
 ];
 
-export const defaultSubscriptionForm = {
+export const defaultSubscriptionForm: SubscriptionForm = {
     status: 0,
-    open: true,
+    open: SubscriptionOpenEnum.OpenToAll,
     quota: -1,
     content: {
         width: 100,

@@ -14,12 +14,12 @@ export declare enum FormContentBlocTypeEnum {
 }
 export interface FormContentField {
     type: FormContentBlocTypeEnum;
-    options: {
-        value: string;
-        label: string;
-        required: boolean;
-        textAlign: string;
-        fieldId: string;
+    options?: {
+        value?: string;
+        label?: string;
+        required?: boolean;
+        textAlign?: string;
+        fieldId?: string;
     };
 }
 export interface FormContent {
@@ -27,7 +27,7 @@ export interface FormContent {
     twoColumns: boolean;
     showLabel: boolean;
     inlineFields: boolean;
-    formFields: FormContentField[][];
+    formFields: FormContentField[];
 }
 export interface SubscriptionForm {
     status: SubscriptionStatusEnum;
