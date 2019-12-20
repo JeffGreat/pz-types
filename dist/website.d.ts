@@ -8,3 +8,9 @@ export interface Website {
     trackingCode: string;
     favico: string;
 }
+export interface TemplateWebsite {
+    name: string;
+    content: string;
+    image: string;
+    compâny: string;
+}

@@ -42,7 +42,7 @@ exports.defaultFormFields = [
     {
         type: 3,
         options: {
-            value: 'Enregistrer ma venue',
+            value: 'Enregistrer',
         },
     },
     {
