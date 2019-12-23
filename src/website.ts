@@ -14,5 +14,5 @@ export interface TemplateWebsite {
     name: string;
     content: string;
     image: string;
-    compâny: string;
+    company: string;
 }
