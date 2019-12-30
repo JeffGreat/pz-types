@@ -6,6 +6,7 @@ export interface User {
     company: string;
     services: any;
     role: string;
+    isSuperAdmin: boolean;
 }
 
 export interface Auth {
