@@ -11,6 +11,7 @@ export interface Website {
 }
 
 export interface TemplateWebsite {
+    id: string;
     name: string;
     content: string;
     image: string;

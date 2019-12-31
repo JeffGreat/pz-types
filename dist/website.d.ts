@@ -9,6 +9,7 @@ export interface Website {
     favico: string;
 }
 export interface TemplateWebsite {
+    id: string;
     name: string;
     content: string;
     image: string;
