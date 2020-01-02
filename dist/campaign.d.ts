@@ -46,3 +46,10 @@ export interface Campaign {
     routerSettings?: any;
     routerResponse?: any;
 }
+export interface TemplateEmail {
+    id: string;
+    name: string;
+    content: string;
+    image: string;
+    company: string;
+}
