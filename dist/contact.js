@@ -59,6 +59,7 @@ var ContactFieldsNameEnum;
     ContactFieldsNameEnum["checkin"] = "checkin";
     ContactFieldsNameEnum["status"] = "status";
     ContactFieldsNameEnum["signature"] = "signature";
+    ContactFieldsNameEnum["company"] = "company";
     ContactFieldsNameEnum["optin"] = "optin";
     ContactFieldsNameEnum["attendants"] = "attendants";
     ContactFieldsNameEnum["champ0"] = "champ0";

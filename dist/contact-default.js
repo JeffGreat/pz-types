@@ -73,6 +73,20 @@ exports.defaultContactFields = {
             formFields: contact_1.FieldDisplayModeEnum.Hidden,
         },
     },
+    company: {
+        id: 'company',
+        enabled: true,
+        name: 'Entreprise',
+        type: contact_1.FieldTypeEnum.Text,
+        position: 4,
+        isSystem: true,
+        display: {
+            contactList: contact_1.FieldDisplayModeEnum.Writable,
+            checkin: contact_1.FieldDisplayModeEnum.Hidden,
+            checkinNewContact: contact_1.FieldDisplayModeEnum.Hidden,
+            formFields: contact_1.FieldDisplayModeEnum.Hidden,
+        },
+    },
     checkin: {
         id: 'checkin',
         enabled: true,

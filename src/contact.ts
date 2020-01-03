@@ -2,7 +2,6 @@ export interface Contact extends ContactProperties {
     id: string;
     source: ContactSourceType;
     event: string;
-    company: string;
 }
 
 export interface ContactSource {
@@ -132,6 +131,7 @@ export enum ContactFieldsNameEnum {
     checkin = 'checkin',
     status = 'status',
     signature = 'signature',
+    company = 'company',
     optin = 'optin',
     attendants = 'attendants',
     champ0 = 'champ0',
