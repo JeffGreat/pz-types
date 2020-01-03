@@ -15,6 +15,7 @@ export interface Event {
     contactFields: ContactFields;
     settingsAccess: SettingsAccess;
     settingsBadge: SettingsBadge;
+    settingsCheckin: SettingsCheckin;
     settings: EventSettings;
     website: Website;
     subscriptionForm: SubscriptionForm;
@@ -50,6 +51,13 @@ export declare type SettingsAccess = {
 export declare type SettingsBadge = {
     contactAssociation?: ContactFieldsNameEnum;
     qrcodeFormat: QrcodeFormat;
+};
+export declare enum CheckinOpenEnum {
+    OpenToContacts = 0,
+    OpenToAll = 1
+}
+export declare type SettingsCheckin = {
+    open: CheckinOpenEnum;
 };
 export declare type QrcodeFormat = {
     field: string;
