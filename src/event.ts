@@ -35,11 +35,11 @@ export interface EventTheme {
 }
 
 export enum AccessTypeEnum {
-    participant = 'Participant',
-    conferencier = 'Conférencier',
-    moderateur = 'Modérateur',
-    emargeur = 'Emargeur',
-    commercial = 'Commercial',
+    participant = 'participant',
+    conferencier = 'conferencier',
+    moderateur = 'moderateur',
+    emargeur = 'emargeur',
+    commercial = 'commercial',
 }
 export type SettingsAccess = {
     [K in AccessTypeEnum]: { enabled: boolean; password: string };

@@ -35,11 +35,11 @@ export interface EventTheme {
     background: string;
 }
 export declare enum AccessTypeEnum {
-    participant = "Participant",
-    conferencier = "Conf\u00E9rencier",
-    moderateur = "Mod\u00E9rateur",
-    emargeur = "Emargeur",
-    commercial = "Commercial"
+    participant = "participant",
+    conferencier = "conferencier",
+    moderateur = "moderateur",
+    emargeur = "emargeur",
+    commercial = "commercial"
 }
 export declare type SettingsAccess = {
     [K in AccessTypeEnum]: {
