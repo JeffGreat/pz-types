@@ -1,5 +1,6 @@
-import { EventSettings, SettingsBadge } from './event';
+import { EventSettings, SettingsBadge, SettingsCheckin } from './event';
 export declare const defaultEventSettings: EventSettings;
+export declare const defaultEventSettingsCheckin: SettingsCheckin;
 export declare const defaultEventSettingsBadge: SettingsBadge;
 export declare const defaultEventStats: {
     contacts: {

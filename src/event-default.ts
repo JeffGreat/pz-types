@@ -1,6 +1,8 @@
-import { EventSettings, SettingsBadge } from './event';
+import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum } from './event';
 
 export const defaultEventSettings: EventSettings = {};
+
+export const defaultEventSettingsCheckin: SettingsCheckin = { open: CheckinOpenEnum.OpenToContacts };
 
 export const defaultEventSettingsBadge: SettingsBadge = {
     contactAssociation: undefined,
