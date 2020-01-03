@@ -5,6 +5,8 @@ export interface Contact extends ContactProperties {
 }
 export interface ContactSource {
     source: ContactSourceType;
+    sourceInfo1: string;
+    sourceInfo2: string;
     date: Date;
     author: String;
 }
