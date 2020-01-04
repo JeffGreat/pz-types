@@ -73,8 +73,8 @@ exports.defaultContactFields = {
             formFields: contact_1.FieldDisplayModeEnum.Hidden,
         },
     },
-    company: {
-        id: 'company',
+    enterprise: {
+        id: 'enterprise',
         enabled: true,
         name: 'Entreprise',
         type: contact_1.FieldTypeEnum.Text,
