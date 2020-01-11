@@ -19,7 +19,13 @@ export interface Event {
     settings: EventSettings;
     website: Website;
     subscriptionForm: SubscriptionForm;
+    eventStats: EventStats;
     company: string;
+}
+export interface EventStats {
+    total: number;
+    extras: number;
+    sources: object;
 }
 export interface EventSession {
     name: string;
