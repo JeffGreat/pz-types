@@ -3,7 +3,7 @@ export declare const defaultEventSettings: EventSettings;
 export declare const defaultEventSettingsCheckin: SettingsCheckin;
 export declare const defaultEventSettingsBadge: SettingsBadge;
 export declare const defaultEventStats: {
-    contacts: {
+    contact: {
         total: number;
         extra: number;
         source: {

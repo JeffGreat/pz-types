@@ -15,7 +15,7 @@ exports.defaultEventSettingsBadge = {
     },
 };
 exports.defaultEventStats = {
-    contacts: {
+    contact: {
         total: 0,
         extra: 0,
         source: {
