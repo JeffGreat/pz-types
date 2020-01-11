@@ -2,7 +2,10 @@ import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum } from '
 
 export const defaultEventSettings: EventSettings = {};
 
-export const defaultEventSettingsCheckin: SettingsCheckin = { open: CheckinOpenEnum.OpenToContacts };
+export const defaultEventSettingsCheckin: SettingsCheckin = {
+    open: CheckinOpenEnum.OpenToContacts,
+    attendantsEnabled: false,
+};
 
 export const defaultEventSettingsBadge: SettingsBadge = {
     contactAssociation: undefined,

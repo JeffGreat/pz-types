@@ -2,7 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var event_1 = require("./event");
 exports.defaultEventSettings = {};
-exports.defaultEventSettingsCheckin = { open: event_1.CheckinOpenEnum.OpenToContacts };
+exports.defaultEventSettingsCheckin = {
+    open: event_1.CheckinOpenEnum.OpenToContacts,
+    attendantsEnabled: false,
+};
 exports.defaultEventSettingsBadge = {
     contactAssociation: undefined,
     qrcodeFormat: {
