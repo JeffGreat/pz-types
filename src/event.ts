@@ -25,9 +25,11 @@ export interface Event {
 }
 
 export interface EventStats {
-    total: number;
-    extras: number;
-    sources: object;
+    contact: {
+        total: number;
+        extras: number;
+        sources: object;
+    };
 }
 
 export interface EventSession {

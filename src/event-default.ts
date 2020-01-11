@@ -19,6 +19,7 @@ export const defaultEventSettingsBadge: SettingsBadge = {
 export const defaultEventStats = {
     contacts: {
         total: 0,
+        extra: 0,
         source: {
             import: 0,
             subscription: 0,

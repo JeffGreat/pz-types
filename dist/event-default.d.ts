@@ -5,6 +5,7 @@ export declare const defaultEventSettingsBadge: SettingsBadge;
 export declare const defaultEventStats: {
     contacts: {
         total: number;
+        extra: number;
         source: {
             import: number;
             subscription: number;
