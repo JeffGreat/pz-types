@@ -58,7 +58,7 @@ export enum CheckinOpenEnum {
 
 export type SettingsCheckin = {
     open: CheckinOpenEnum;
-    attendantsEnabled: boolean;
+    attendantsLimit: number;
 };
 
 export type QrcodeFormat = {

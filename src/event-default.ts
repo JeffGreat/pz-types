@@ -4,7 +4,7 @@ export const defaultEventSettings: EventSettings = {};
 
 export const defaultEventSettingsCheckin: SettingsCheckin = {
     open: CheckinOpenEnum.OpenToContacts,
-    attendantsEnabled: false,
+    attendantsLimit: 0,
 };
 
 export const defaultEventSettingsBadge: SettingsBadge = {

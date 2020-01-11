@@ -4,7 +4,7 @@ var event_1 = require("./event");
 exports.defaultEventSettings = {};
 exports.defaultEventSettingsCheckin = {
     open: event_1.CheckinOpenEnum.OpenToContacts,
-    attendantsEnabled: false,
+    attendantsLimit: 0,
 };
 exports.defaultEventSettingsBadge = {
     contactAssociation: undefined,
