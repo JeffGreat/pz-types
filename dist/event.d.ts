@@ -25,6 +25,7 @@ export interface Event {
 export interface EventStats {
     contact: {
         total: number;
+        checkin: number;
         extra: number;
         sources: object;
     };
