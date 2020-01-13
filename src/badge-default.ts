@@ -1,5 +1,11 @@
 import { BadgeFormat } from './badge';
 
+export const badgeResolution = {
+    cm: 120,
+    mm: 12,
+    inch: 300,
+};
+
 export const badgeFormats: { [K: string]: BadgeFormat } = {
     a4: {
         id: 'a4',
@@ -8,6 +14,8 @@ export const badgeFormats: { [K: string]: BadgeFormat } = {
         orientation: 'p',
         width: 210,
         height: 297,
+        canvasWidth: 2520,
+        canvasHeight: 3564,
         pdfFormat: 'a4',
         unit: 'mm',
         margin: {
@@ -25,6 +33,8 @@ export const badgeFormats: { [K: string]: BadgeFormat } = {
         orientation: 'p',
         width: 105,
         height: 148,
+        canvasWidth: 1260,
+        canvasHeight: 1776,
         pdfFormat: 'a6',
         unit: 'mm',
         margin: {
@@ -43,6 +53,8 @@ export const badgeFormats: { [K: string]: BadgeFormat } = {
         pdfFormat: 'credit-card',
         width: 85.7,
         height: 54.03,
+        canvasWidth: 1028,
+        canvasHeight: 648,
         unit: 'mm',
         margin: {
             secureMargin: 3,

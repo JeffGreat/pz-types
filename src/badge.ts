@@ -7,6 +7,8 @@ export interface BadgeFormat {
     orientation: 'p' | 'l';
     width: number;
     height: number;
+    canvasHeight: number;
+    canvasWidth: number;
     pdfFormat?: string;
     unit: string;
     margin?: {
