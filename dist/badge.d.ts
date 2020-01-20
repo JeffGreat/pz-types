@@ -26,4 +26,5 @@ export interface Badge {
     format: BadgeFormat;
     contactAssociation?: string;
     contacts: ContactFields;
+    event: string;
 }
