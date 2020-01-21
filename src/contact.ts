@@ -165,3 +165,9 @@ export interface ContactField {
     options?: FieldTypeOptions;
     display: { [K in FieldDisplayModeInterfaceEnum]: FieldDisplayModeEnum };
 }
+
+export interface ContactDoublon {
+    _id: { email: string };
+    count: number;
+    contacts: Contact[];
+}

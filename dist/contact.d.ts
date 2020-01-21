@@ -146,3 +146,10 @@ export interface ContactField {
         [K in FieldDisplayModeInterfaceEnum]: FieldDisplayModeEnum;
     };
 }
+export interface ContactDoublon {
+    _id: {
+        email: string;
+    };
+    count: number;
+    contacts: Contact[];
+}
