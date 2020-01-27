@@ -68,6 +68,7 @@ export enum CheckinOpenEnum {
 
 export type SettingsCheckin = {
     open: CheckinOpenEnum;
+    validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
 };
 

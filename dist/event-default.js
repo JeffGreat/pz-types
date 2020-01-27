@@ -5,6 +5,7 @@ exports.defaultEventSettings = {};
 exports.defaultEventSettingsCheckin = {
     open: event_1.CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
+    validateContactBeforeCheckin: false,
 };
 exports.defaultEventSettingsBadge = {
     contactAssociation: undefined,
