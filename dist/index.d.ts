@@ -11,3 +11,5 @@ export * from './campaign';
 export * from './badge';
 export * from './badge-default';
 export * from './qrcode';
+export * from './others';
+export * from './api';
