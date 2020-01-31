@@ -7,6 +7,7 @@ export const defaultEventSettingsCheckin: SettingsCheckin = {
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
     checkinStatCounter: checkinStatCounterEnum.contacts,
+    printer: { enabled: false, printer: 'pz-printer' },
 };
 
 export const defaultEventSettingsBadge: SettingsBadge = {

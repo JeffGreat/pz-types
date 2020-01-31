@@ -1,6 +1,14 @@
 export interface Contact extends ContactProperties {
     id: string;
     source: ContactSourceType;
+    updatedAt: Date;
+    updatedBy: Date;
+    updatedStatusAt: Date;
+    updatedStatusBy: String;
+    updatedCheckinAt: Date;
+    updatedCheckinBy: String;
+    createdAt: Date;
+    createdBy: Date;
     event: string;
     company: string;
 }

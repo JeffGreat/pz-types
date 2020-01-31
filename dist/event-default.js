@@ -7,6 +7,7 @@ exports.defaultEventSettingsCheckin = {
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
     checkinStatCounter: event_1.checkinStatCounterEnum.contacts,
+    printer: { enabled: false, printer: 'pz-printer' },
 };
 exports.defaultEventSettingsBadge = {
     contactAssociation: undefined,

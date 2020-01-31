@@ -70,11 +70,16 @@ export declare enum checkinStatCounterEnum {
     statusMaybe = 1,
     statusYes = 2
 }
+export interface PrinterSettings {
+    printer: string;
+    enabled: boolean;
+}
 export declare type SettingsCheckin = {
     open: CheckinOpenEnum;
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
     checkinStatCounter: checkinStatCounterEnum;
+    printer: PrinterSettings;
 };
 export declare type QrcodeFormat = {
     field: string;
