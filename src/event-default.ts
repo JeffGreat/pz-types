@@ -1,4 +1,4 @@
-import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum } from './event';
+import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum, checkinStatCounterEnum } from './event';
 
 export const defaultEventSettings: EventSettings = {};
 
@@ -6,6 +6,7 @@ export const defaultEventSettingsCheckin: SettingsCheckin = {
     open: CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
+    checkinStatCounter: checkinStatCounterEnum.contacts,
 };
 
 export const defaultEventSettingsBadge: SettingsBadge = {
