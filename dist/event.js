@@ -13,9 +13,9 @@ var CheckinOpenEnum;
     CheckinOpenEnum[CheckinOpenEnum["OpenToContacts"] = 0] = "OpenToContacts";
     CheckinOpenEnum[CheckinOpenEnum["OpenToAll"] = 1] = "OpenToAll";
 })(CheckinOpenEnum = exports.CheckinOpenEnum || (exports.CheckinOpenEnum = {}));
-var checkinStatCounterEnum;
-(function (checkinStatCounterEnum) {
-    checkinStatCounterEnum[checkinStatCounterEnum["contacts"] = 0] = "contacts";
-    checkinStatCounterEnum[checkinStatCounterEnum["statusMaybe"] = 1] = "statusMaybe";
-    checkinStatCounterEnum[checkinStatCounterEnum["statusYes"] = 2] = "statusYes";
-})(checkinStatCounterEnum = exports.checkinStatCounterEnum || (exports.checkinStatCounterEnum = {}));
+var CheckinStatCounterEnum;
+(function (CheckinStatCounterEnum) {
+    CheckinStatCounterEnum[CheckinStatCounterEnum["contacts"] = 0] = "contacts";
+    CheckinStatCounterEnum[CheckinStatCounterEnum["statusMaybe"] = 1] = "statusMaybe";
+    CheckinStatCounterEnum[CheckinStatCounterEnum["statusYes"] = 2] = "statusYes";
+})(CheckinStatCounterEnum = exports.CheckinStatCounterEnum || (exports.CheckinStatCounterEnum = {}));

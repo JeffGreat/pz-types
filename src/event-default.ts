@@ -1,4 +1,4 @@
-import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum, checkinStatCounterEnum } from './event';
+import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum, CheckinStatCounterEnum } from './event';
 
 export const defaultEventSettings: EventSettings = {};
 
@@ -6,7 +6,7 @@ export const defaultEventSettingsCheckin: SettingsCheckin = {
     open: CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
-    checkinStatCounter: checkinStatCounterEnum.contacts,
+    checkinStatCounter: CheckinStatCounterEnum.contacts,
     printer: { enabled: false, printer: 'pz-printer' },
 };
 

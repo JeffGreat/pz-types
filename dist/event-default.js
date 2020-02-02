@@ -6,7 +6,7 @@ exports.defaultEventSettingsCheckin = {
     open: event_1.CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
-    checkinStatCounter: event_1.checkinStatCounterEnum.contacts,
+    checkinStatCounter: event_1.CheckinStatCounterEnum.contacts,
     printer: { enabled: false, printer: 'pz-printer' },
 };
 exports.defaultEventSettingsBadge = {

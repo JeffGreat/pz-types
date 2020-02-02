@@ -65,7 +65,7 @@ export declare enum CheckinOpenEnum {
     OpenToContacts = 0,
     OpenToAll = 1
 }
-export declare enum checkinStatCounterEnum {
+export declare enum CheckinStatCounterEnum {
     contacts = 0,
     statusMaybe = 1,
     statusYes = 2
@@ -78,7 +78,7 @@ export declare type SettingsCheckin = {
     open: CheckinOpenEnum;
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
-    checkinStatCounter: checkinStatCounterEnum;
+    checkinStatCounter: CheckinStatCounterEnum;
     printer: PrinterSettings;
 };
 export declare type QrcodeFormat = {

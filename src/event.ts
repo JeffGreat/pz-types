@@ -66,7 +66,7 @@ export enum CheckinOpenEnum {
     OpenToAll = 1,
 }
 
-export enum checkinStatCounterEnum {
+export enum CheckinStatCounterEnum {
     contacts = 0,
     statusMaybe = 1,
     statusYes = 2,
@@ -81,7 +81,7 @@ export type SettingsCheckin = {
     open: CheckinOpenEnum;
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
-    checkinStatCounter: checkinStatCounterEnum;
+    checkinStatCounter: CheckinStatCounterEnum;
     printer: PrinterSettings;
 };
 
