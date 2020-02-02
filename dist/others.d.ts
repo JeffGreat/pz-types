@@ -10,4 +10,5 @@ export interface Pairing {
     connected: boolean;
     printerDevice: PairingDevice;
     scannerDevice: PairingDevice;
+    event: string;
 }
