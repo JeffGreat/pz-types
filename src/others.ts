@@ -15,4 +15,5 @@ export interface Pairing {
     printerDevice: PairingDevice;
     scannerDevice: PairingDevice;
     event: string;
+    company: string;
 }
