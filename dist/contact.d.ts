@@ -1,14 +1,5 @@
-export interface Contact extends ContactProperties {
+export interface Contact extends ContactProperties, ContactLogProperties {
     id: string;
-    source: ContactSourceType;
-    updatedAt: Date;
-    updatedBy: Date;
-    updatedStatusAt: Date;
-    updatedStatusBy: String;
-    updatedCheckinAt: Date;
-    updatedCheckinBy: String;
-    createdAt: Date;
-    createdBy: Date;
     event: string;
     company: string;
 }
@@ -17,7 +8,7 @@ export interface ContactSource {
     sourceInfo1: string;
     sourceInfo2: string;
     date: Date;
-    author: String;
+    author: string;
 }
 export declare enum ContactSourceType {
     Single = 0,
@@ -141,6 +132,28 @@ export declare enum ContactFieldsNameEnum {
     champ13 = "champ13",
     champ14 = "champ14",
     champ15 = "champ15"
+}
+export declare type ContactLogProperties = {
+    source: ContactSourceType;
+    updatedAt: Date;
+    updatedBy: Date;
+    updatedStatusAt: Date;
+    updatedStatusBy: string;
+    updatedCheckinAt: Date;
+    updatedCheckinBy: string;
+    createdAt: Date;
+    createdBy: Date;
+};
+export declare enum ContactLogPropertiesNameEnum {
+    source = "source",
+    updatedAt = "updatedAt",
+    updatedBy = "updatedBy",
+    updatedStatusAt = "updatedStatusAt",
+    updatedStatusBy = "updatedStatusBy",
+    updatedCheckinAt = "updatedCheckinAt",
+    updatedCheckinBy = "updatedCheckinBy",
+    createdAt = "createdAt",
+    createdBy = "createdBy"
 }
 export interface ContactField {
     id: string;

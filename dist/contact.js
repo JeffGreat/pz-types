@@ -79,3 +79,15 @@ var ContactFieldsNameEnum;
     ContactFieldsNameEnum["champ14"] = "champ14";
     ContactFieldsNameEnum["champ15"] = "champ15";
 })(ContactFieldsNameEnum = exports.ContactFieldsNameEnum || (exports.ContactFieldsNameEnum = {}));
+var ContactLogPropertiesNameEnum;
+(function (ContactLogPropertiesNameEnum) {
+    ContactLogPropertiesNameEnum["source"] = "source";
+    ContactLogPropertiesNameEnum["updatedAt"] = "updatedAt";
+    ContactLogPropertiesNameEnum["updatedBy"] = "updatedBy";
+    ContactLogPropertiesNameEnum["updatedStatusAt"] = "updatedStatusAt";
+    ContactLogPropertiesNameEnum["updatedStatusBy"] = "updatedStatusBy";
+    ContactLogPropertiesNameEnum["updatedCheckinAt"] = "updatedCheckinAt";
+    ContactLogPropertiesNameEnum["updatedCheckinBy"] = "updatedCheckinBy";
+    ContactLogPropertiesNameEnum["createdAt"] = "createdAt";
+    ContactLogPropertiesNameEnum["createdBy"] = "createdBy";
+})(ContactLogPropertiesNameEnum = exports.ContactLogPropertiesNameEnum || (exports.ContactLogPropertiesNameEnum = {}));
