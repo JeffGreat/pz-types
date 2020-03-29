@@ -12,3 +12,5 @@ __export(require("./subscription-form"));
 __export(require("./subscription-form-default"));
 __export(require("./campaign"));
 __export(require("./badge-default"));
+__export(require("./message"));
+__export(require("./survey"));

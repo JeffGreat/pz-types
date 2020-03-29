@@ -17,6 +17,7 @@ export interface Event {
     settingsAccess: SettingsAccess;
     settingsBadge: SettingsBadge;
     settingsCheckin: SettingsCheckin;
+    settingsLive: SettingsLive;
     settings: EventSettings;
     website: Website;
     subscriptionForm: SubscriptionForm;
@@ -89,6 +90,40 @@ export type QrcodeFormat = {
     field: string;
     typeNumber: TypeNumber;
     errorCorrectionLevel: ErrorCorrectionLevel;
+};
+
+export enum WallDisplayModesEnum {
+    side = 1,
+    middle = 2,
+    stripe = 3,
+}
+
+export type WallSettings = {
+    messages: string[];
+    displayMode: WallDisplayModesEnum;
+};
+
+export enum LiveDisplayModeEnum {
+    off = 0,
+    messages = 1,
+    survey = 2,
+}
+
+export type LiveDocumentSettings = {
+    documentId: string;
+    slide: number;
+};
+
+export type LiveSurveySettings = {
+    surveyId: string;
+};
+
+export type SettingsLive = {
+    wallSettings: WallSettings;
+    surveySettings: LiveSurveySettings;
+    displayMode: LiveDisplayModeEnum;
+    documentSettings: LiveDocumentSettings;
+    displayDocument: boolean;
 };
 
 export type EventSettings = {};

@@ -10,6 +10,8 @@ export * from './subscription-form-default';
 export * from './campaign';
 export * from './badge';
 export * from './badge-default';
+export * from './message';
+export * from './survey';
 export * from './qrcode';
 export * from './others';
 export * from './api';

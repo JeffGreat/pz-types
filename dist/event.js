@@ -19,3 +19,15 @@ var CheckinStatCounterEnum;
     CheckinStatCounterEnum[CheckinStatCounterEnum["statusMaybe"] = 1] = "statusMaybe";
     CheckinStatCounterEnum[CheckinStatCounterEnum["statusYes"] = 2] = "statusYes";
 })(CheckinStatCounterEnum = exports.CheckinStatCounterEnum || (exports.CheckinStatCounterEnum = {}));
+var WallDisplayModesEnum;
+(function (WallDisplayModesEnum) {
+    WallDisplayModesEnum[WallDisplayModesEnum["side"] = 1] = "side";
+    WallDisplayModesEnum[WallDisplayModesEnum["middle"] = 2] = "middle";
+    WallDisplayModesEnum[WallDisplayModesEnum["stripe"] = 3] = "stripe";
+})(WallDisplayModesEnum = exports.WallDisplayModesEnum || (exports.WallDisplayModesEnum = {}));
+var LiveDisplayModeEnum;
+(function (LiveDisplayModeEnum) {
+    LiveDisplayModeEnum[LiveDisplayModeEnum["off"] = 0] = "off";
+    LiveDisplayModeEnum[LiveDisplayModeEnum["messages"] = 1] = "messages";
+    LiveDisplayModeEnum[LiveDisplayModeEnum["survey"] = 2] = "survey";
+})(LiveDisplayModeEnum = exports.LiveDisplayModeEnum || (exports.LiveDisplayModeEnum = {}));
