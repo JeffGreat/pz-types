@@ -21,9 +21,9 @@ var CheckinStatCounterEnum;
 })(CheckinStatCounterEnum = exports.CheckinStatCounterEnum || (exports.CheckinStatCounterEnum = {}));
 var WallDisplayModesEnum;
 (function (WallDisplayModesEnum) {
-    WallDisplayModesEnum[WallDisplayModesEnum["side"] = 1] = "side";
-    WallDisplayModesEnum[WallDisplayModesEnum["middle"] = 2] = "middle";
-    WallDisplayModesEnum[WallDisplayModesEnum["stripe"] = 3] = "stripe";
+    WallDisplayModesEnum[WallDisplayModesEnum["side"] = 0] = "side";
+    WallDisplayModesEnum[WallDisplayModesEnum["middle"] = 1] = "middle";
+    WallDisplayModesEnum[WallDisplayModesEnum["stripe"] = 2] = "stripe";
 })(WallDisplayModesEnum = exports.WallDisplayModesEnum || (exports.WallDisplayModesEnum = {}));
 var LiveDisplayModeEnum;
 (function (LiveDisplayModeEnum) {

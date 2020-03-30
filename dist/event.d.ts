@@ -88,9 +88,9 @@ export declare type QrcodeFormat = {
     errorCorrectionLevel: ErrorCorrectionLevel;
 };
 export declare enum WallDisplayModesEnum {
-    side = 1,
-    middle = 2,
-    stripe = 3
+    side = 0,
+    middle = 1,
+    stripe = 2
 }
 export declare type WallSettings = {
     messages: string[];
@@ -102,11 +102,11 @@ export declare enum LiveDisplayModeEnum {
     survey = 2
 }
 export declare type LiveDocumentSettings = {
-    documentId: string;
+    documentId?: string;
     slide: number;
 };
 export declare type LiveSurveySettings = {
-    surveyId: string;
+    surveyId?: string;
 };
 export declare type SettingsLive = {
     wallSettings: WallSettings;

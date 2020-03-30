@@ -17,6 +17,13 @@ exports.defaultEventSettingsBadge = {
         errorCorrectionLevel: 'L',
     },
 };
+exports.defaultEventSettingsLive = {
+    wallSettings: { messages: [], displayMode: 3 },
+    surveySettings: {},
+    displayMode: 0,
+    documentSettings: { slide: 0 },
+    displayDocument: false,
+};
 exports.defaultEventStats = {
     contact: {
         total: 0,
