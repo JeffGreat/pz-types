@@ -1,4 +1,11 @@
-import { EventSettings, SettingsBadge, SettingsCheckin, CheckinOpenEnum, CheckinStatCounterEnum } from './event';
+import {
+    EventSettings,
+    SettingsBadge,
+    SettingsCheckin,
+    CheckinOpenEnum,
+    CheckinStatCounterEnum,
+    SettingsLive,
+} from './event';
 
 export const defaultEventSettings: EventSettings = {};
 
@@ -17,6 +24,14 @@ export const defaultEventSettingsBadge: SettingsBadge = {
         typeNumber: 4,
         errorCorrectionLevel: 'L',
     },
+};
+
+export const defaultEventSettingsLive: SettingsLive = {
+    wallSettings: { messages: [], displayMode: 3 },
+    surveySettings: {},
+    displayMode: 0,
+    documentSettings: { slide: 0 },
+    displayDocument: false,
 };
 
 export const defaultEventStats = {

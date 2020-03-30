@@ -93,9 +93,9 @@ export type QrcodeFormat = {
 };
 
 export enum WallDisplayModesEnum {
-    side = 1,
-    middle = 2,
-    stripe = 3,
+    side = 0,
+    middle = 1,
+    stripe = 2,
 }
 
 export type WallSettings = {
@@ -110,12 +110,12 @@ export enum LiveDisplayModeEnum {
 }
 
 export type LiveDocumentSettings = {
-    documentId: string;
+    documentId?: string;
     slide: number;
 };
 
 export type LiveSurveySettings = {
-    surveyId: string;
+    surveyId?: string;
 };
 
 export type SettingsLive = {
