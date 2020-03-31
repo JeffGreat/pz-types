@@ -1,15 +1,15 @@
-export enum MessageWallStatus {
+export enum MessageWallStatusEnum {
     hidden = 0,
     displayed = 1,
 }
 
-export enum MessageSource {
+export enum MessageSourceEnum {
     sms = 'sms',
     twitter = 'twitter',
     web = 'web',
 }
 
-export enum MessageStatus {
+export enum MessageStatusEnum {
     received = 0,
     selected = 1,
     wall = 2,
@@ -20,8 +20,8 @@ export enum MessageStatus {
 export interface Message {
     id: string;
     event: string;
-    source: MessageSource;
-    status: MessageStatus;
+    source: MessageSourceEnum;
+    status: MessageStatusEnum;
     content: string;
     contentOriginal: string;
     vote: number;
