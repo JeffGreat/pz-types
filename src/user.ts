@@ -4,7 +4,7 @@ export interface User {
     picture: string;
     name?: string;
     company: string;
-    services: any;
+    services?: ServicesInfo;
     role: string;
     isSuperAdmin: boolean;
 }
@@ -12,4 +12,11 @@ export interface User {
 export interface Auth {
     token: string;
     user: User;
+}
+
+export interface ServicesInfo {
+    twitter?: object;
+    facebook?: string;
+    google?: string;
+    emailPassword?: boolean;
 }
