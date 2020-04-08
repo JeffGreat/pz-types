@@ -15,7 +15,12 @@ export interface Auth {
 }
 
 export interface ServicesInfo {
-    twitter?: object;
+    twitter?: {
+        oauth_token: string;
+        oauth_token_secret: string;
+        user_id: string;
+        screen_name: string;
+    };
     facebook?: string;
     google?: string;
     emailPassword?: boolean;
