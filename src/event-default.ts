@@ -29,7 +29,7 @@ export const defaultEventSettingsBadge: SettingsBadge = {
 export const defaultEventSettingsLive: SettingsLive = {
     wallSettings: { messages: [], displayMode: 3 },
     messageSettings: {
-        twitterQuery: '',
+        twitterQuery: undefined,
     },
     surveySettings: {},
     displayMode: 0,
