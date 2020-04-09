@@ -19,6 +19,9 @@ exports.defaultEventSettingsBadge = {
 };
 exports.defaultEventSettingsLive = {
     wallSettings: { messages: [], displayMode: 3 },
+    messageSettings: {
+        twitterQuery: '',
+    },
     surveySettings: {},
     displayMode: 0,
     documentSettings: { slide: 0 },

@@ -118,7 +118,12 @@ export type LiveSurveySettings = {
     surveyId?: string;
 };
 
+export type MessageSettings = {
+    twitterQuery: string;
+};
+
 export type SettingsLive = {
+    messageSettings: MessageSettings;
     wallSettings: WallSettings;
     surveySettings: LiveSurveySettings;
     displayMode: LiveDisplayModeEnum;

@@ -108,7 +108,11 @@ export declare type LiveDocumentSettings = {
 export declare type LiveSurveySettings = {
     surveyId?: string;
 };
+export declare type MessageSettings = {
+    twitterQuery: string;
+};
 export declare type SettingsLive = {
+    messageSettings: MessageSettings;
     wallSettings: WallSettings;
     surveySettings: LiveSurveySettings;
     displayMode: LiveDisplayModeEnum;
