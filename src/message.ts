@@ -29,6 +29,7 @@ export interface Message {
     tweetId: string;
     tweetIdStr: string;
     userInfo: string;
+    userPicture: string;
     position: number;
     publishCounter: number;
     publishDate: Date;
