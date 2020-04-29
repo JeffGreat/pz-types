@@ -17,6 +17,7 @@ export interface FormContentField {
     options?: {
         value?: string;
         label?: string;
+        display?: string;
         required?: boolean;
         textAlign?: string;
         fieldId?: string;
