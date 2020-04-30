@@ -17,7 +17,13 @@ export interface FormContentField {
     options?: {
         value?: string;
         label?: string;
-        display?: string;
+        display?: {
+            contentAlign: 'left' | 'center' | 'right';
+            textColor: string;
+            btnColor: string;
+            btnRadius: 'none' | 'light' | 'strong';
+            selector: 'collapsed' | 'extended';
+        };
         required?: boolean;
         textAlign?: string;
         fieldId?: string;
