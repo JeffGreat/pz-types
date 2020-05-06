@@ -1,4 +1,4 @@
-import { ContactProperties, Contact } from './contact';
+import { ContactProperties } from './contact';
 
 export enum CampaignRecipientsTypeEnum {
     all = 0,
@@ -49,6 +49,7 @@ export interface Campaign {
     subject?: string;
     content?: string;
     sender: string;
+    replyTo: string;
     recipients?: ContactProperties | string[];
     routerSettings?: any;
     routerResponse?: any;

@@ -42,6 +42,7 @@ export interface Campaign {
     subject?: string;
     content?: string;
     sender: string;
+    replyTo: string;
     recipients?: ContactProperties | string[];
     routerSettings?: any;
     routerResponse?: any;
