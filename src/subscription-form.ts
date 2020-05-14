@@ -21,11 +21,12 @@ export interface FormContentField {
         value?: string;
         label?: string;
         display?: {
-            contentAlign: 'left' | 'center' | 'right';
-            textColor: string;
-            btnColor: string;
-            btnRadius: 'none' | 'light' | 'strong';
-            selector: 'collapsed' | 'extended';
+            checkbox?: boolean;
+            contentAlign?: 'left' | 'center' | 'right';
+            textColor?: string;
+            btnColor?: string;
+            btnRadius?: 'none' | 'light' | 'strong';
+            selector?: 'collapsed' | 'extended';
         };
         required?: boolean;
         textAlign?: string;
