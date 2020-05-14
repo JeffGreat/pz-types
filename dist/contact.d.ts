@@ -134,7 +134,7 @@ export declare enum ContactFieldsNameEnum {
     champ15 = "champ15"
 }
 export declare type ContactLogProperties = {
-    source: ContactSourceType;
+    source: ContactSource;
     updatedAt: Date;
     updatedBy: Date;
     updatedStatusAt: Date;
