@@ -118,6 +118,6 @@ export declare type SettingsLive = {
     displayMode: LiveDisplayModeEnum;
     documentSettings: LiveDocumentSettings;
     displayDocument: boolean;
-    streamId?: string;
+    stream?: object;
 };
 export declare type EventSettings = {};
