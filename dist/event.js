@@ -7,6 +7,7 @@ var AccessTypeEnum;
     AccessTypeEnum["moderateur"] = "moderateur";
     AccessTypeEnum["emargeur"] = "emargeur";
     AccessTypeEnum["commercial"] = "commercial";
+    AccessTypeEnum["streamer"] = "streamer";
 })(AccessTypeEnum = exports.AccessTypeEnum || (exports.AccessTypeEnum = {}));
 var CheckinOpenEnum;
 (function (CheckinOpenEnum) {

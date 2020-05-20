@@ -52,6 +52,7 @@ export enum AccessTypeEnum {
     moderateur = 'moderateur',
     emargeur = 'emargeur',
     commercial = 'commercial',
+    streamer = 'streamer',
 }
 export type SettingsAccess = {
     [K in AccessTypeEnum]: { enabled: boolean; password: string };

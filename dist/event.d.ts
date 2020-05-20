@@ -50,7 +50,8 @@ export declare enum AccessTypeEnum {
     conferencier = "conferencier",
     moderateur = "moderateur",
     emargeur = "emargeur",
-    commercial = "commercial"
+    commercial = "commercial",
+    streamer = "streamer"
 }
 export declare type SettingsAccess = {
     [K in AccessTypeEnum]: {
