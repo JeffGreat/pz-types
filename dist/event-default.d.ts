@@ -44,4 +44,8 @@ export declare const defaultSettingsAccess: {
         enabled: boolean;
         password: string;
     };
+    streamer: {
+        enabled: boolean;
+        password: string;
+    };
 };

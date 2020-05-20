@@ -65,4 +65,5 @@ export const defaultSettingsAccess = {
     moderateur: { enabled: false, password: '' },
     emargeur: { enabled: false, password: '' },
     commercial: { enabled: false, password: '' },
+    streamer: { enabled: false, password: '' },
 };
