@@ -101,7 +101,7 @@ export enum WallDisplayModesEnum {
 
 export type WallSettings = {
     messages: string[];
-    displayMode: WallDisplayModesEnum;
+    messageDisplayMode: WallDisplayModesEnum;
 };
 
 export enum LiveDisplayModeEnum {

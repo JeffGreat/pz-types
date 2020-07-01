@@ -5,6 +5,8 @@ import {
     CheckinOpenEnum,
     CheckinStatCounterEnum,
     SettingsLive,
+    WallDisplayModesEnum,
+    LiveDisplayModeEnum,
 } from './event';
 
 export const defaultEventSettings: EventSettings = {};
@@ -27,12 +29,12 @@ export const defaultEventSettingsBadge: SettingsBadge = {
 };
 
 export const defaultEventSettingsLive: SettingsLive = {
-    wallSettings: { messages: [], displayMode: 3 },
+    wallSettings: { messages: [], messageDisplayMode: WallDisplayModesEnum.side },
     messageSettings: {
         twitterQuery: undefined,
     },
     surveySettings: {},
-    displayMode: 0,
+    displayMode: LiveDisplayModeEnum.off,
     documentSettings: { slide: 0 },
     displayDocument: false,
 };

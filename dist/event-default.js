@@ -18,12 +18,12 @@ exports.defaultEventSettingsBadge = {
     },
 };
 exports.defaultEventSettingsLive = {
-    wallSettings: { messages: [], displayMode: 3 },
+    wallSettings: { messages: [], messageDisplayMode: event_1.WallDisplayModesEnum.side },
     messageSettings: {
         twitterQuery: undefined,
     },
     surveySettings: {},
-    displayMode: 0,
+    displayMode: event_1.LiveDisplayModeEnum.off,
     documentSettings: { slide: 0 },
     displayDocument: false,
 };

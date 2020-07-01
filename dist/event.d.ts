@@ -95,7 +95,7 @@ export declare enum WallDisplayModesEnum {
 }
 export declare type WallSettings = {
     messages: string[];
-    displayMode: WallDisplayModesEnum;
+    messageDisplayMode: WallDisplayModesEnum;
 };
 export declare enum LiveDisplayModeEnum {
     off = 0,
