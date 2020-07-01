@@ -9,6 +9,7 @@ export * from './subscription-form';
 export * from './subscription-form-default';
 export * from './campaign';
 export * from './badge';
+export * from './doc';
 export * from './badge-default';
 export * from './message';
 export * from './survey';
