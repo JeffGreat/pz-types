@@ -13,6 +13,8 @@ export interface Survey {
     options: string;
     pointSystem: number;
     totalPoint: number;
+    polls: Poll[];
+    publishDate: Date;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -31,8 +33,6 @@ export declare enum PollType {
 }
 export interface Poll {
     id: string;
-    event: Event['id'];
-    survey: Survey['id'];
     title: string;
     type: PollType;
     options: object;
@@ -40,7 +40,6 @@ export interface Poll {
     compiledResult: object;
     position: number;
     totalPoint: number;
-    publishDate: Date;
     createdAt: Date;
     updatedAt: Date;
 }
