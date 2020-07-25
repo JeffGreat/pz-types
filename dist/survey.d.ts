@@ -31,11 +31,19 @@ export declare enum PollType {
     evaluation = 2,
     date = 3
 }
+export interface PoolOptionValue {
+    value: string;
+    label: string;
+}
+export interface PollOptions {
+    multiple: boolean;
+    values: [];
+}
 export interface Poll {
     id: string;
     title: string;
     type: PollType;
-    options: object;
+    options: PollOptions;
     validators: object;
     compiledResult: object;
     position: number;
