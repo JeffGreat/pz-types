@@ -2,7 +2,7 @@ import { Event } from './event';
 export declare enum SurveyStatus {
     closed = 0,
     opened = 1,
-    finished = 1
+    finished = 2
 }
 export interface Survey {
     id: string;

@@ -4,7 +4,7 @@ var SurveyStatus;
 (function (SurveyStatus) {
     SurveyStatus[SurveyStatus["closed"] = 0] = "closed";
     SurveyStatus[SurveyStatus["opened"] = 1] = "opened";
-    SurveyStatus[SurveyStatus["finished"] = 1] = "finished";
+    SurveyStatus[SurveyStatus["finished"] = 2] = "finished";
 })(SurveyStatus = exports.SurveyStatus || (exports.SurveyStatus = {}));
 var PollType;
 (function (PollType) {
