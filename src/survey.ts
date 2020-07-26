@@ -43,7 +43,7 @@ export interface PoolOptionValue {
 
 export interface PollOptions {
     multiple: boolean;
-    values: [];
+    values: { label: number; value: string }[];
 }
 
 export interface Poll {
