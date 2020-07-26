@@ -29,27 +29,27 @@ export interface SurveyResult {
     totalPoints: number;
 }
 
-export enum PollType {
+export enum PollTypesEnum {
     text = 0,
     choice = 1,
     evaluation = 2,
     date = 3,
 }
 
-export interface PoolOptionValue {
+export interface PollOptionChoice {
     value: string;
     label: string;
 }
 
 export interface PollOptions {
     multiple: boolean;
-    values: { label: number; value: string }[];
+    choices: PollOptionChoice[];
 }
 
 export interface Poll {
     id: string;
     title: string;
-    type: PollType;
+    type: PollTypesEnum;
     options: PollOptions;
     validators: object;
     compiledResult: object;
