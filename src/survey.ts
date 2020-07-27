@@ -31,9 +31,9 @@ export interface SurveyResult {
 
 export enum PollTypesEnum {
     text = 0,
-    choice = 1,
-    evaluation = 2,
-    date = 3,
+    word = 2,
+    choice = 3,
+    evaluation = 4,
 }
 
 export interface PollOptionChoice {

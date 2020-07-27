@@ -9,7 +9,7 @@ var SurveyStatus;
 var PollTypesEnum;
 (function (PollTypesEnum) {
     PollTypesEnum[PollTypesEnum["text"] = 0] = "text";
-    PollTypesEnum[PollTypesEnum["choice"] = 1] = "choice";
-    PollTypesEnum[PollTypesEnum["evaluation"] = 2] = "evaluation";
-    PollTypesEnum[PollTypesEnum["date"] = 3] = "date";
+    PollTypesEnum[PollTypesEnum["word"] = 2] = "word";
+    PollTypesEnum[PollTypesEnum["choice"] = 3] = "choice";
+    PollTypesEnum[PollTypesEnum["evaluation"] = 4] = "evaluation";
 })(PollTypesEnum = exports.PollTypesEnum || (exports.PollTypesEnum = {}));
