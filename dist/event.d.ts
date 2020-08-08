@@ -2,6 +2,7 @@ import { ContactFieldsNameEnum, ContactFields } from './contact';
 import { Website } from './website';
 import { TypeNumber, ErrorCorrectionLevel } from './qrcode';
 import { SubscriptionForm } from './subscription-form';
+import { SettingsCheckin } from './checkin';
 export interface Event {
     id: string;
     name: string;
@@ -32,11 +33,14 @@ export interface EventStats {
     };
 }
 export interface EventSession {
+    id: string;
     name: string;
+    position: number;
     fieldsGroup: {
         id: string;
-        value: number;
+        value: number | number[];
     }[];
+    settingsCheckin: SettingsCheckin;
 }
 export interface EventTheme {
     primary: string;
@@ -62,26 +66,6 @@ export declare type SettingsAccess = {
 export declare type SettingsBadge = {
     contactAssociation?: ContactFieldsNameEnum;
     qrcodeFormat: QrcodeFormat;
-};
-export declare enum CheckinOpenEnum {
-    OpenToContacts = 0,
-    OpenToAll = 1
-}
-export declare enum CheckinStatCounterEnum {
-    contacts = 0,
-    statusMaybe = 1,
-    statusYes = 2
-}
-export interface PrinterSettings {
-    printer: string;
-    enabled: boolean;
-}
-export declare type SettingsCheckin = {
-    open: CheckinOpenEnum;
-    validateContactBeforeCheckin: boolean;
-    attendantsLimit: number;
-    checkinStatCounter: CheckinStatCounterEnum;
-    printer: PrinterSettings;
 };
 export declare type QrcodeFormat = {
     field: string;

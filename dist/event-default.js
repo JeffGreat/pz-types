@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var event_1 = require("./event");
+var checkin_1 = require("./checkin");
 exports.defaultEventSettings = {};
 exports.defaultEventSettingsCheckin = {
-    open: event_1.CheckinOpenEnum.OpenToContacts,
+    open: checkin_1.CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
-    checkinStatCounter: event_1.CheckinStatCounterEnum.contacts,
+    checkinStatCounter: checkin_1.CheckinStatCounterEnum.contacts,
     printer: { enabled: false, printer: 'pz-printer' },
 };
 exports.defaultEventSettingsBadge = {

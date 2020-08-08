@@ -5,6 +5,7 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./event"));
 __export(require("./event-default"));
+__export(require("./checkin"));
 __export(require("./contact"));
 __export(require("./contact-default"));
 __export(require("./website"));

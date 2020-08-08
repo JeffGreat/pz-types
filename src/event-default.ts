@@ -1,13 +1,5 @@
-import {
-    EventSettings,
-    SettingsBadge,
-    SettingsCheckin,
-    CheckinOpenEnum,
-    CheckinStatCounterEnum,
-    SettingsLive,
-    WallDisplayModesEnum,
-    LiveDisplayModeEnum,
-} from './event';
+import { EventSettings, SettingsBadge, SettingsLive, WallDisplayModesEnum, LiveDisplayModeEnum } from './event';
+import { SettingsCheckin, CheckinOpenEnum, CheckinStatCounterEnum } from './checkin';
 
 export const defaultEventSettings: EventSettings = {};
 

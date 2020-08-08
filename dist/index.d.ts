@@ -1,5 +1,6 @@
 export * from './event';
 export * from './event-default';
+export * from './checkin';
 export * from './user';
 export * from './company';
 export * from './contact';

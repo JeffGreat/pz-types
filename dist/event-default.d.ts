@@ -1,4 +1,5 @@
-import { EventSettings, SettingsBadge, SettingsCheckin, SettingsLive } from './event';
+import { EventSettings, SettingsBadge, SettingsLive } from './event';
+import { SettingsCheckin } from './checkin';
 export declare const defaultEventSettings: EventSettings;
 export declare const defaultEventSettingsCheckin: SettingsCheckin;
 export declare const defaultEventSettingsBadge: SettingsBadge;
