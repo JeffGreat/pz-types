@@ -7,6 +7,7 @@ export const defaultEventSettingsCheckin: SettingsCheckin = {
     open: CheckinOpenEnum.OpenToContacts,
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
+    firmRequired: false,
     checkinStatCounter: CheckinStatCounterEnum.contacts,
     printer: { enabled: false, printer: 'pz-printer' },
 };
