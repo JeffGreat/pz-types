@@ -17,7 +17,6 @@ export interface Event {
     contactFields: ContactFields;
     settingsAccess: SettingsAccess;
     settingsBadge: SettingsBadge;
-    settingsCheckin: SettingsCheckin;
     settingsLive: SettingsLive;
     settings: EventSettings;
     website: Website;
