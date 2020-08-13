@@ -19,7 +19,6 @@ var FieldTypeEnum;
     FieldTypeEnum[FieldTypeEnum["Image"] = 6] = "Image";
     FieldTypeEnum[FieldTypeEnum["Link"] = 7] = "Link";
     FieldTypeEnum[FieldTypeEnum["Number"] = 8] = "Number";
-    FieldTypeEnum[FieldTypeEnum["Signature"] = 9] = "Signature";
 })(FieldTypeEnum = exports.FieldTypeEnum || (exports.FieldTypeEnum = {}));
 var QuotaTypes;
 (function (QuotaTypes) {
@@ -57,7 +56,6 @@ var ContactFieldsNameEnum;
     ContactFieldsNameEnum["email"] = "email";
     ContactFieldsNameEnum["mobile"] = "mobile";
     ContactFieldsNameEnum["status"] = "status";
-    ContactFieldsNameEnum["signature"] = "signature";
     ContactFieldsNameEnum["enterprise"] = "enterprise";
     ContactFieldsNameEnum["optin"] = "optin";
     ContactFieldsNameEnum["attendants"] = "attendants";

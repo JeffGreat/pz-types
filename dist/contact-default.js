@@ -131,20 +131,6 @@ exports.defaultContactFields = {
             defaultValue: 0,
         },
     },
-    signature: {
-        id: 'signature',
-        enabled: true,
-        name: 'Signature',
-        type: contact_1.FieldTypeEnum.Signature,
-        position: 6,
-        isSystem: true,
-        display: {
-            contactList: contact_1.FieldDisplayModeEnum.Writable,
-            checkin: contact_1.FieldDisplayModeEnum.Hidden,
-            checkinNewContact: contact_1.FieldDisplayModeEnum.Hidden,
-            formFields: contact_1.FieldDisplayModeEnum.Hidden,
-        },
-    },
     optin: {
         id: 'optin',
         enabled: true,

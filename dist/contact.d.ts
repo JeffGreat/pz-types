@@ -1,6 +1,6 @@
 export interface Contact extends ContactProperties, ContactLogProperties {
     id: string;
-    checkin: ContactCheckinInterface;
+    checkin: ContactCheckinInterface[];
     event: string;
     company: string;
 }
@@ -27,8 +27,7 @@ export declare enum FieldTypeEnum {
     LongText = 5,
     Image = 6,
     Link = 7,
-    Number = 8,
-    Signature = 9
+    Number = 8
 }
 export interface BaseFieldTypeOptions {
     defaultValue?: any;
@@ -112,7 +111,6 @@ export declare enum ContactFieldsNameEnum {
     email = "email",
     mobile = "mobile",
     status = "status",
-    signature = "signature",
     enterprise = "enterprise",
     optin = "optin",
     attendants = "attendants",

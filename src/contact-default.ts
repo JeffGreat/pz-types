@@ -129,20 +129,6 @@ export const defaultContactFields: ContactFields = {
             defaultValue: 0,
         },
     },
-    signature: {
-        id: 'signature',
-        enabled: true,
-        name: 'Signature',
-        type: FieldTypeEnum.Signature,
-        position: 6,
-        isSystem: true,
-        display: {
-            contactList: FieldDisplayModeEnum.Writable,
-            checkin: FieldDisplayModeEnum.Hidden,
-            checkinNewContact: FieldDisplayModeEnum.Hidden,
-            formFields: FieldDisplayModeEnum.Hidden,
-        },
-    },
     optin: {
         id: 'optin',
         enabled: true,
