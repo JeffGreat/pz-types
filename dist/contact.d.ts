@@ -1,5 +1,6 @@
 export interface Contact extends ContactProperties, ContactLogProperties {
     id: string;
+    checkin: ContactCheckinInterface;
     event: string;
     company: string;
 }
@@ -131,6 +132,12 @@ export declare enum ContactFieldsNameEnum {
     champ13 = "champ13",
     champ14 = "champ14",
     champ15 = "champ15"
+}
+export interface ContactCheckinInterface {
+    session: string;
+    checkin: boolean;
+    date: Date;
+    firm: string;
 }
 export declare type ContactLogProperties = {
     source: ContactSource;
