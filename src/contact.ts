@@ -156,7 +156,7 @@ export interface ContactCheckinInterface {
     session: string;
     checkin: boolean;
     date: Date;
-    firm: string;
+    firm?: string;
 }
 
 export type ContactLogProperties = {

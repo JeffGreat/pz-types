@@ -135,7 +135,7 @@ export interface ContactCheckinInterface {
     session: string;
     checkin: boolean;
     date: Date;
-    firm: string;
+    firm?: string;
 }
 export declare type ContactLogProperties = {
     source: ContactSource;
