@@ -110,7 +110,6 @@ export declare enum ContactFieldsNameEnum {
     lastName = "lastName",
     email = "email",
     mobile = "mobile",
-    checkin = "checkin",
     status = "status",
     signature = "signature",
     enterprise = "enterprise",
@@ -139,8 +138,6 @@ export declare type ContactLogProperties = {
     updatedBy: Date;
     updatedStatusAt: Date;
     updatedStatusBy: string;
-    updatedCheckinAt: Date;
-    updatedCheckinBy: string;
     createdAt: Date;
     createdBy: Date;
 };
@@ -150,8 +147,6 @@ export declare enum ContactLogPropertiesNameEnum {
     updatedBy = "updatedBy",
     updatedStatusAt = "updatedStatusAt",
     updatedStatusBy = "updatedStatusBy",
-    updatedCheckinAt = "updatedCheckinAt",
-    updatedCheckinBy = "updatedCheckinBy",
     createdAt = "createdAt",
     createdBy = "createdBy"
 }

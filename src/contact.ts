@@ -1,5 +1,6 @@
 export interface Contact extends ContactProperties, ContactLogProperties {
     id: string;
+    checkin: ContactCheckinInterface;
     event: string;
     company: string;
 }
@@ -130,7 +131,6 @@ export enum ContactFieldsNameEnum {
     lastName = 'lastName',
     email = 'email',
     mobile = 'mobile',
-    checkin = 'checkin',
     status = 'status',
     signature = 'signature',
     enterprise = 'enterprise',
@@ -153,14 +153,20 @@ export enum ContactFieldsNameEnum {
     champ14 = 'champ14',
     champ15 = 'champ15',
 }
+
+export interface ContactCheckinInterface {
+    session: string;
+    checkin: boolean;
+    date: Date;
+    firm: string;
+}
+
 export type ContactLogProperties = {
     source: ContactSource;
     updatedAt: Date;
     updatedBy: Date;
     updatedStatusAt: Date;
     updatedStatusBy: string;
-    updatedCheckinAt: Date;
-    updatedCheckinBy: string;
     createdAt: Date;
     createdBy: Date;
 };
@@ -170,8 +176,6 @@ export enum ContactLogPropertiesNameEnum {
     updatedBy = 'updatedBy',
     updatedStatusAt = 'updatedStatusAt',
     updatedStatusBy = 'updatedStatusBy',
-    updatedCheckinAt = 'updatedCheckinAt',
-    updatedCheckinBy = 'updatedCheckinBy',
     createdAt = 'createdAt',
     createdBy = 'createdBy',
 }

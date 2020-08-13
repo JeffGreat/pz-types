@@ -87,24 +87,6 @@ exports.defaultContactFields = {
             formFields: contact_1.FieldDisplayModeEnum.Hidden,
         },
     },
-    checkin: {
-        id: 'checkin',
-        enabled: true,
-        name: 'Présence',
-        type: contact_1.FieldTypeEnum.YesNo,
-        options: {
-            groups: [{ value: 0, name: 'Non' }, { value: 1, name: 'Oui' }],
-            defaultValue: 0,
-        },
-        position: 5,
-        isSystem: true,
-        display: {
-            contactList: contact_1.FieldDisplayModeEnum.Writable,
-            checkin: contact_1.FieldDisplayModeEnum.Hidden,
-            checkinNewContact: contact_1.FieldDisplayModeEnum.Hidden,
-            formFields: contact_1.FieldDisplayModeEnum.Hidden,
-        },
-    },
     status: {
         id: 'status',
         enabled: true,
