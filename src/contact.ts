@@ -133,7 +133,6 @@ export enum ContactFieldsNameEnum {
     status = 'status',
     enterprise = 'enterprise',
     optin = 'optin',
-    attendants = 'attendants',
     champ0 = 'champ0',
     champ1 = 'champ1',
     champ2 = 'champ2',

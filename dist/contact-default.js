@@ -148,21 +148,6 @@ exports.defaultContactFields = {
             formFields: contact_1.FieldDisplayModeEnum.Hidden,
         },
     },
-    attendants: {
-        id: 'attendants',
-        enabled: false,
-        name: 'Accompagnants',
-        type: contact_1.FieldTypeEnum.Number,
-        position: 2,
-        options: { defaultValue: 0, min: 0 },
-        isSystem: true,
-        display: {
-            contactList: contact_1.FieldDisplayModeEnum.Writable,
-            checkin: contact_1.FieldDisplayModeEnum.Hidden,
-            checkinNewContact: contact_1.FieldDisplayModeEnum.Hidden,
-            formFields: contact_1.FieldDisplayModeEnum.Hidden,
-        },
-    },
     champ0: {
         id: 'champ0',
         enabled: false,

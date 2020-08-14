@@ -58,7 +58,6 @@ var ContactFieldsNameEnum;
     ContactFieldsNameEnum["status"] = "status";
     ContactFieldsNameEnum["enterprise"] = "enterprise";
     ContactFieldsNameEnum["optin"] = "optin";
-    ContactFieldsNameEnum["attendants"] = "attendants";
     ContactFieldsNameEnum["champ0"] = "champ0";
     ContactFieldsNameEnum["champ1"] = "champ1";
     ContactFieldsNameEnum["champ2"] = "champ2";
