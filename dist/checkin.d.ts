@@ -28,4 +28,5 @@ export interface CheckinInterface {
     event: Event['id'];
     session: EventSession['id'];
     checkedIn: boolean;
+    extras: number;
 }

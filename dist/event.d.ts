@@ -40,7 +40,8 @@ export interface EventSession {
         value: number | number[];
     }[];
     settingsCheckin: SettingsCheckin;
-    counter: number;
+    checkins: number;
+    extras: number;
 }
 export interface EventTheme {
     primary: string;

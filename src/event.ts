@@ -39,8 +39,9 @@ export interface EventSession {
     name: string;
     position: number;
     fieldsGroup: { id: string; value: number | number[] }[];
-    settingsCheckin: SettingsCheckin,
-    counter: number
+    settingsCheckin: SettingsCheckin;
+    checkins: number;
+    extras: number;
 }
 export interface EventTheme {
     primary: string;

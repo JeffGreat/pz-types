@@ -134,6 +134,7 @@ export declare enum ContactFieldsNameEnum {
 export interface ContactCheckinInterface {
     session: string;
     checkin: boolean;
+    extras: number;
     date: Date;
     firm?: string;
 }
