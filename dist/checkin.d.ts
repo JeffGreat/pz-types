@@ -1,8 +1,9 @@
-import { Contact } from './contact';
+import { Contact, ContactProperties } from './contact';
 import { Event, EventSession } from './event';
 export declare enum CheckinOpenEnum {
     OpenToContacts = 0,
-    OpenToAll = 1
+    OpenToAll = 1,
+    OpenToSome = 2
 }
 export declare enum CheckinStatCounterEnum {
     contacts = 0,
@@ -15,6 +16,7 @@ export interface PrinterSettings {
 }
 export declare type SettingsCheckin = {
     open: CheckinOpenEnum;
+    openFilter?: ContactProperties;
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
     firmRequired: boolean;

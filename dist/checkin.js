@@ -4,6 +4,7 @@ var CheckinOpenEnum;
 (function (CheckinOpenEnum) {
     CheckinOpenEnum[CheckinOpenEnum["OpenToContacts"] = 0] = "OpenToContacts";
     CheckinOpenEnum[CheckinOpenEnum["OpenToAll"] = 1] = "OpenToAll";
+    CheckinOpenEnum[CheckinOpenEnum["OpenToSome"] = 2] = "OpenToSome";
 })(CheckinOpenEnum = exports.CheckinOpenEnum || (exports.CheckinOpenEnum = {}));
 var CheckinStatCounterEnum;
 (function (CheckinStatCounterEnum) {
