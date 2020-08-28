@@ -4,7 +4,6 @@ import { Event, EventSession } from './event';
 export enum CheckinOpenEnum {
     OpenToContacts = 0,
     OpenToAll = 1,
-    OpenToSome = 2,
 }
 
 export enum CheckinStatCounterEnum {
@@ -20,7 +19,7 @@ export interface PrinterSettings {
 
 export type SettingsCheckin = {
     open: CheckinOpenEnum;
-    openFilter?: ContactProperties;
+    checkinFilter?: ContactProperties;
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
     firmRequired: boolean;
