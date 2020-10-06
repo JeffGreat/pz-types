@@ -18,6 +18,7 @@ export interface Event {
     settingsAccess: SettingsAccess;
     settingsBadge: SettingsBadge;
     settingsLive: SettingsLive;
+    settingsStream: SettingsStream;
     settings: EventSettings;
     website: Website;
     subscriptionForm: SubscriptionForm;
@@ -111,7 +112,10 @@ export type SettingsLive = {
     displayMode: LiveDisplayModeEnum;
     documentSettings: LiveDocumentSettings;
     displayDocument: boolean;
-    stream?: object;
+};
+export type SettingsStream = {
+    sessionId: string;
+    
 };
 
 export type EventSettings = {};
