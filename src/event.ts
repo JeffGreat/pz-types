@@ -115,7 +115,8 @@ export type SettingsLive = {
 };
 export type SettingsStream = {
     sessionId: string;
-    
+    wallStreamIds: string[];
+    deviceStreamIds: string[];
 };
 
 export type EventSettings = {};
