@@ -108,5 +108,7 @@ export declare type SettingsLive = {
 };
 export declare type SettingsStream = {
     sessionId: string;
+    wallStreamIds: string[];
+    deviceStreamIds: string[];
 };
 export declare type EventSettings = {};
