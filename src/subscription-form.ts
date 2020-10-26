@@ -40,6 +40,7 @@ export interface FormContent {
     showLabel: boolean;
     inlineFields: boolean;
     formFields: FormContentField[];
+    thanksContent: string;
 }
 
 export interface SubscriptionForm {
