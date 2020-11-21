@@ -62,6 +62,6 @@ exports.defaultSubscriptionForm = {
         showLabel: true,
         inlineFields: false,
         formFields: exports.defaultFormFields,
-        thanksContent: 'Merci pour votre inscription',
+        thanksContent: '<h3>Merci pour votre inscription</h3>',
     },
 };

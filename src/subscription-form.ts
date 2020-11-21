@@ -41,6 +41,8 @@ export interface FormContent {
     inlineFields: boolean;
     formFields: FormContentField[];
     thanksContent: string;
+    allowDuple: boolean;
+    dupleContent: string;
 }
 
 export interface SubscriptionForm {
