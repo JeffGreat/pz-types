@@ -63,7 +63,7 @@ export const defaultSubscriptionForm: SubscriptionForm = {
         inlineFields: false,
         formFields: defaultFormFields,
         thanksContent: '<h3>Merci pour votre inscription</h3>',
-        allowDuple: false,
+        allowDuple: true,
         dupleContent: '<h3>Votre email est déjà inscrit pour cet événement</h3>',
     },
 };
