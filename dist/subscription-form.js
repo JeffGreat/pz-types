@@ -10,6 +10,11 @@ var SubscriptionOpenEnum;
     SubscriptionOpenEnum[SubscriptionOpenEnum["OpenToContacts"] = 0] = "OpenToContacts";
     SubscriptionOpenEnum[SubscriptionOpenEnum["OpenToAll"] = 1] = "OpenToAll";
 })(SubscriptionOpenEnum = exports.SubscriptionOpenEnum || (exports.SubscriptionOpenEnum = {}));
+var SubscriptionInviteModalEnum;
+(function (SubscriptionInviteModalEnum) {
+    SubscriptionInviteModalEnum[SubscriptionInviteModalEnum["ShowInviteModal"] = 1] = "ShowInviteModal";
+    SubscriptionInviteModalEnum[SubscriptionInviteModalEnum["HideInviteModal"] = 0] = "HideInviteModal";
+})(SubscriptionInviteModalEnum = exports.SubscriptionInviteModalEnum || (exports.SubscriptionInviteModalEnum = {}));
 var FormContentBlocTypeEnum;
 (function (FormContentBlocTypeEnum) {
     FormContentBlocTypeEnum[FormContentBlocTypeEnum["contactField"] = 0] = "contactField";

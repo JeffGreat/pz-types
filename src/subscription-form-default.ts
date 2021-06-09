@@ -1,4 +1,4 @@
-import { SubscriptionForm, SubscriptionOpenEnum, FormContentField } from './subscription-form';
+import { SubscriptionForm, SubscriptionOpenEnum, FormContentField, SubscriptionInviteModalEnum } from './subscription-form';
 
 export const defaultFormFields: FormContentField[] = [
     {
@@ -55,6 +55,7 @@ export const defaultFormFields: FormContentField[] = [
 export const defaultSubscriptionForm: SubscriptionForm = {
     status: 0,
     open: SubscriptionOpenEnum.OpenToAll,
+    inviteModal: SubscriptionInviteModalEnum.HideInviteModal,
     quota: -1,
     content: {
         width: 100,

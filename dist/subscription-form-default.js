@@ -55,6 +55,7 @@ exports.defaultFormFields = [
 exports.defaultSubscriptionForm = {
     status: 0,
     open: subscription_form_1.SubscriptionOpenEnum.OpenToAll,
+    inviteModal: subscription_form_1.SubscriptionInviteModalEnum.HideInviteModal,
     quota: -1,
     content: {
         width: 100,

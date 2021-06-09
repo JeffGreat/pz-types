@@ -8,6 +8,11 @@ export enum SubscriptionOpenEnum {
     OpenToAll = 1,
 }
 
+export enum SubscriptionInviteModalEnum {
+    ShowInviteModal = 1,
+    HideInviteModal = 0,
+}
+
 export enum FormContentBlocTypeEnum {
     contactField = 0,
     text = 1,
@@ -48,6 +53,7 @@ export interface FormContent {
 export interface SubscriptionForm {
     status: SubscriptionStatusEnum;
     open: SubscriptionOpenEnum;
+    inviteModal: SubscriptionInviteModalEnum;
     quota: number;
     content: FormContent;
 }
