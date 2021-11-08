@@ -34,6 +34,7 @@ export interface FormContentField {
             selector?: 'collapsed' | 'extended';
         };
         required?: boolean;
+        readOnly?: boolean;
         textAlign?: string;
         fieldId?: string;
     };
