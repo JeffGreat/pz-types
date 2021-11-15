@@ -8,6 +8,7 @@ exports.defaultEventSettingsCheckin = {
     attendantsLimit: 0,
     validateContactBeforeCheckin: false,
     firmRequired: false,
+    firmCgu: '',
     checkinStatCounter: checkin_1.CheckinStatCounterEnum.contacts,
     printer: { enabled: false, printer: 'pz-printer' },
 };

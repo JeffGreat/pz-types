@@ -19,6 +19,7 @@ export declare type SettingsCheckin = {
     validateContactBeforeCheckin: boolean;
     attendantsLimit: number;
     firmRequired: boolean;
+    firmCgu: string;
     checkinStatCounter: CheckinStatCounterEnum;
     printer: PrinterSettings;
 };
